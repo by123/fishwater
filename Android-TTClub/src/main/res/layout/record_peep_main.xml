@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.sjy.ttclub.widget.CustomScrollView
+        android:id="@+id/record_peep_main_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false">
+
+        <LinearLayout
+            android:id="@+id/record_peep_main_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/record_date_view_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/record_peep_main_top_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/record_peep_main_top_layout"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_55"
+                        android:layout_marginTop="@dimen/space_12"
+                        android:background="@color/white"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/record_peep_title_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/record_peep_main_top_container"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/space_20"
+                    android:src="@drawable/record_peep_title_icon_papa"/>
+
+                <include
+                    android:id="@+id/record_peep_main_title"
+                    layout="@layout/record_data_title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/record_peep_main_top_container"
+                    android:layout_gravity="top|left"
+                    android:layout_marginTop="@dimen/space_12"
+                    android:background="@color/transparent"/>
+            </RelativeLayout>
+
+
+            <com.sjy.ttclub.widget.ScrollViewPager
+                android:id="@+id/record_peep_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_12"/>
+
+        </LinearLayout>
+
+    </com.sjy.ttclub.widget.CustomScrollView>
+
+    <include
+        android:id="@+id/record_peep_main_float_title"
+        layout="@layout/record_data_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:visibility="invisible"/>
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/record_peep_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

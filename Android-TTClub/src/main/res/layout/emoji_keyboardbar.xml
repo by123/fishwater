@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_edit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/gray_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_pic_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:src="@drawable/btn_select_picture"/>
+
+            <ImageView
+                android:id="@+id/btn_emotion_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                android:src="@drawable/btn_expression"/>
+            <!-- com.lysm.ttclub.emoji.EmoticonsEditText -->
+
+            <com.sjy.ttclub.emoji.EmoticonsEditText
+                android:id="@+id/evolution_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="4.0"
+                android:background="@drawable/editview_border"
+                android:ems="10"
+                android:hint="我要评论..."
+                android:longClickable="false"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColorHint="@color/llgray"
+                android:textSize="@dimen/space_13">
+
+                <requestFocus/>
+            </com.sjy.ttclub.emoji.EmoticonsEditText>
+
+            <TextView
+                android:id="@+id/btn_evolution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="发送"
+                android:textColor="@color/llgray"
+                android:textSize="@dimen/space_16"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_foot_func"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/ic_facekeyboard"
+                layout="@layout/emoji_keyboardpopwindow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

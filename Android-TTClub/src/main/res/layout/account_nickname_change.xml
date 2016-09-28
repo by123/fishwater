@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/account_main_back_color"
+              android:orientation="vertical">
+
+    <View
+        style="@style/account_line_style"
+        android:paddingTop="@dimen/space_10"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/account_personal_change_nickname_new"
+            style="@style/account_edit"
+            android:paddingLeft="20dp"
+            android:hint="@string/account_signup_nickname"
+            android:maxLength="8"/>
+
+        <ImageView
+            android:id="@+id/account_personal_change_nickname_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/space_15"
+            android:src="@drawable/account_personal_password_change_delete"/>
+
+    </RelativeLayout>
+
+    <View style="@style/account_line_style"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:gravity="center"
+        android:text="@string/account_personal_nickname_change_alert"
+        android:textColor="@color/account_gray"
+        android:textSize="@dimen/space_12"/>
+</LinearLayout>

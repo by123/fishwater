@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/community_gray_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/space_50"
+        android:orientation="vertical">
+
+        <com.sjy.ttclub.widget.LoadingLayout
+            android:id="@+id/loading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.sjy.ttclub.loadmore.LoadMoreListViewContainer
+            android:id="@+id/list_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <ListView
+                android:id="@+id/post_detail_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:scrollbarStyle="outsideOverlay" />
+
+        </com.sjy.ttclub.loadmore.LoadMoreListViewContainer>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/black"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/community_gray_line" />
+            <LinearLayout
+                android:id="@+id/tip_comment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/tip_comment_head_icon"
+                    android:layout_width="@dimen/space_28"
+                    android:layout_height="@dimen/space_28"
+                    android:layout_margin="@dimen/space_10"
+                    fresco:backgroundImage="@color/llgray"
+                    fresco:roundAsCircle="true" />
+
+                <TextView
+                    android:id="@+id/tip_comment_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/community_black"
+                    android:textSize="@dimen/space_15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/community_gray_line" />
+
+            <com.sjy.ttclub.emoji.EmotionKeyBoard
+                android:id="@+id/emoji_keyboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

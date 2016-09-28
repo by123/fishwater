@@ -1,0 +1,64 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_86">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/homepage_detail_recommend_image"
+            android:layout_width="@dimen/space_118"
+            android:layout_height="@dimen/space_86"
+            android:scaleType="centerCrop"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space_6"
+            android:layout_marginLeft="@dimen/space_14"
+            android:layout_marginTop="@dimen/space_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/homepage_detail_recommend_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:maxLines="2"
+                android:text="推荐文章标题"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_16"/>
+
+            <TextView
+                android:id="@+id/homepage_detail_recommend_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:singleLine="true"
+                android:text="色即是空"
+                android:textColor="@color/llgray"
+                android:textSize="@dimen/space_12"/>
+
+            <TextView
+                android:id="@+id/homepage_detail_recommend_view_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:singleLine="true"
+                android:text="200人浏览"
+                android:textColor="@color/llgray"
+                android:textSize="@dimen/space_12"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/homepage_detail_recommend_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/default_listview_seletor"/>
+
+</FrameLayout>

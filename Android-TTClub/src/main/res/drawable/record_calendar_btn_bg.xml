@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto">
+
+    <!--<item android:drawable="@drawable/record_day_state_today" android:state_pressed="true" />-->
+
+    <!--<item android:drawable="@drawable/record_day_state_today" android:state_selected="true" />-->
+
+    <item android:drawable="@drawable/record_day_state_dym" lib:state_dym="true" />
+
+    <item android:drawable="@drawable/record_day_state_myself" lib:state_myself="true" />
+
+    <item android:drawable="@drawable/record_day_state_papa" lib:state_papa="true" />
+
+    <item android:drawable="@drawable/record_day_state_nothing" lib:state_nothing="true" />
+
+    <item android:drawable="@drawable/record_day_state_no" lib:state_current="true" />
+
+    <item android:drawable="@drawable/record_day_state_focus" lib:state_focus="true" />
+
+    <!--<item android:drawable="@drawable/record_day_state_today" lib:state_today="true" />-->
+
+</selector>

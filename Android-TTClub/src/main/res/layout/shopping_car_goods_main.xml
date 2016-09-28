@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cart="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_shopping_car_goods"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_5">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/shopping_car_goods_items_img"
+            android:layout_width="@dimen/space_100"
+            android:layout_height="@dimen/space_100" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/space_5">
+
+            <TextView
+                android:id="@+id/shopping_car_goods_items_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="@color/shopping_items_title_color"
+                android:textSize="@dimen/space_16" />
+
+            <TextView
+                android:id="@+id/shopping_car_goods_items_spec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:textColor="@color/shopping_items_other_color"
+                android:textSize="@dimen/space_12" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shopping_car_goods_items_panic_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/product_detail_icon_welfare"
+                    android:drawablePadding="@dimen/space_10"
+                    android:gravity="center"
+                    android:textSize="@dimen/space_12" />
+
+                <com.sjy.ttclub.shopping.widget.ShoppingCountdownView
+                    android:id="@+id/shopping_car_goods_items_count_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/space_10"
+                    android:gravity="center"
+                    android:textSize="@dimen/space_12" />
+
+                <TextView
+                    android:id="@+id/shopping_car_goods_items_panic_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/space_10"
+                    android:gravity="center"
+                    android:text="@string/shopping_car_panic_right_text"
+                    android:textSize="@dimen/space_12" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shopping_car_goods_items_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/shopping_items_other_color"
+                    android:textSize="@dimen/space_12" />
+
+                <com.sjy.ttclub.widget.PriceView
+                    android:id="@+id/shopping_car_goods_items_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    cart:decimalSize="@dimen/space_10"
+                    cart:intSize="@dimen/space_16"
+                    cart:moneySize="@dimen/space_10"
+                    cart:strike="false"
+                    cart:textColor="@color/shopping_panic_light_color" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

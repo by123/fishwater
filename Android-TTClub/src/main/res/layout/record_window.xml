@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/record_window_bg"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space_116"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/record_window_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.sjy.ttclub.record.widget.RecordWindowListView
+                    android:id="@+id/record_window_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@color/transparent"
+                    android:listSelector="@color/transparent"
+                    android:scrollbars="none"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/record_window_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/record_window_no_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/space_30"
+                        android:paddingTop="@dimen/space_30">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left|center_vertical"
+                            android:padding="@dimen/space_18"
+                            android:text="@string/record_title_dym"
+                            android:textColor="@color/record_window_title"
+                            android:textSize="@dimen/space_18"/>
+
+                        <CheckBox
+                            android:id="@+id/record_window_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/space_18"
+                            android:background="@null"
+                            android:button="@drawable/record_window_check"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:background="@color/record_list_items_content"/>
+                </LinearLayout>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/record_window_nothing_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_180"
+                    android:paddingBottom="@dimen/space_10"
+                    android:paddingLeft="@dimen/space_80"
+                    android:paddingRight="@dimen/space_80"
+                    android:paddingTop="@dimen/space_30"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top|center_horizontal"
+                    android:paddingTop="@dimen/space_20"
+                    android:text="@string/record_window_bottom_title"
+                    android:textColor="@color/record_window_bottom_title"
+                    android:textSize="@dimen/space_18"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="@dimen/record_window_icon_size"
+                android:layout_height="@dimen/record_window_icon_size"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10">
+
+                <com.sjy.ttclub.widget.AlphaImageView
+                    android:id="@+id/record_float_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/record_float_view_btn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:focusable="false"
+                    android:text="@string/record_btn_ok"
+                    android:textColor="@color/white"/>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/record_window_top_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/record_window_top_icon_margin_top"
+        android:background="@null" />
+</FrameLayout>

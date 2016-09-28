@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/items_order_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shopping_selector_option"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_5">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/items_order_img"
+            android:layout_width="@dimen/space_100"
+            android:layout_height="@dimen/space_100"
+            android:layout_gravity="left" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/space_5">
+
+            <TextView
+                android:id="@+id/items_order_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:textColor="@color/shopping_items_title_color"
+                android:textSize="@dimen/space_16" />
+
+            <TextView
+                android:id="@+id/items_order_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginBottom="@dimen/space_20"
+                android:textSize="@dimen/space_12"></TextView>
+
+            <TextView
+                android:id="@+id/items_order_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:textColor="@color/shopping_items_other_color"
+                android:textSize="@dimen/space_12" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

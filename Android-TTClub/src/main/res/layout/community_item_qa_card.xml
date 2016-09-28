@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/account_selector_option"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/community_gray_line"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/mQaQuestionerHeadIcon"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    fresco:backgroundImage="@color/llgray"
+                    fresco:roundAsCircle="true" />
+
+                <LinearLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/mQaQuestionerName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:text="昵称"
+                            android:textColor="@color/community_deep_gray"
+                            android:textSize="@dimen/space_13" />
+
+                        <TextView
+                            android:id="@+id/mQaQuestionerLever"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/community_user_level_bg"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/space_1"
+                            android:paddingLeft="@dimen/space_5"
+                            android:paddingRight="@dimen/space_5"
+                            android:paddingTop="@dimen/space_1"
+                            android:text="1"
+                            android:textColor="@color/llgray"
+                            android:textSize="@dimen/space_9" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/mQACreateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="时间"
+                        android:textColor="@color/llgray"
+                        android:textSize="@dimen/space_10" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_btn_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/btn_qa_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/community_question_ask_before" />
+
+                    <TextView
+                        android:id="@+id/btn_qa_question_counts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="10"
+                        android:textColor="@color/llgray"
+                        android:textSize="@dimen/space_15"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="54dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textQuestionTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="2dp"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_13"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textQuestionContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="5dp"
+                        android:maxLines="3"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_16" />
+
+                    <!--<com.lsym.ttclub.widget.MultImageShowView
+                        android:id="@+id/qa_mult_images"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:visibility="visible" />-->
+
+                    <LinearLayout
+                        android:id="@+id/answerLinelayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textAnswerContent"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/comunity_qa_answer_bg"
+                            android:ellipsize="end"
+                            android:lineSpacingExtra="5dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginRight="@dimen/space_10"
+                            android:maxLines="3"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_14" />
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/answererHeadIcon"
+                            android:layout_width="@dimen/space_29"
+                            android:layout_height="@dimen/space_29"
+                            android:layout_gravity="center_vertical|top"
+                            android:scaleType="centerCrop"
+                            fresco:backgroundImage="@color/llgray"
+                            fresco:roundAsCircle="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginTop="13dp">
+
+                    <TextView
+                        android:id="@+id/qa_reply_counts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="5dp"
+                        android:drawableLeft="@drawable/community_comment_icon"
+                        android:drawablePadding="2dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/community_llgray"
+                        android:textSize="@dimen/space_10" />
+
+                    <TextView
+                        android:id="@+id/qa_community_foucs_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/qa_reply_counts"
+                        android:drawableLeft="@drawable/community_focus_icon"
+                        android:drawablePadding="2dp"
+                        android:gravity="center"
+                        android:text="10"
+                        android:textColor="@color/llgray"
+                        android:textSize="@dimen/space_10" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line"
+                android:visibility="visible" />-->
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/qa_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/community_card_jian_bg"
+            android:visibility="invisible" />
+    </FrameLayout>
+</LinearLayout>

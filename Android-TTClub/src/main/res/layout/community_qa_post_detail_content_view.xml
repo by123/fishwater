@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        layout="@layout/community_post_detail_user_info_view"/>
+    <TextView
+        android:id="@+id/qa_detail_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:singleLine="false"
+        android:text="帖子主题"
+        android:textColor="@color/black"
+        android:textSize="@dimen/space_17" />
+    <TextView
+        android:id="@+id/qa_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:lineSpacingExtra="7dp"
+        android:text="帖子内容"
+        android:textColor="@color/community_post_detail_content_color"
+        android:textSize="@dimen/space_15"
+        android:visibility="visible" />
+</LinearLayout>

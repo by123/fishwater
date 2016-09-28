@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/shopping_bg">
+
+    <include layout="@layout/shopping_common_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginTop="@dimen/space_50"
+        android:background="@color/shopping_common_line"></View>
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/shopping_list_ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space_51">
+
+        <ListView
+            android:id="@+id/shopping_main_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"></ListView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/shopping_main_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space_51" />
+</FrameLayout>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_8"
+        android:background="#f4f4f4" />
+
+    <FrameLayout
+        android:id="@+id/homepage_pic_area"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_8"
+        android:background="@drawable/account_selector_option">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/homepage_pic_image"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:roundAsCircle="false"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundedCornerRadius="5dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/homepage_test_content_mask" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginBottom="@dimen/space_70"
+            android:layout_marginLeft="@dimen/space_45"
+            android:layout_marginRight="@dimen/space_45"
+            android:layout_marginTop="@dimen/space_50"
+            android:background="@drawable/home_pic_youwu">
+
+            <TextView
+                android:id="@+id/homepage_pic_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_13"
+                android:layout_marginRight="@dimen/space_13"
+                android:layout_marginTop="@dimen/space_20"
+                android:background="#30fc1255"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="中国版---卡戴姗"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_24" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/homepage_pic_image_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/space_29"
+            android:layout_marginTop="@dimen/space_35"
+            android:text="8 photos"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_14" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

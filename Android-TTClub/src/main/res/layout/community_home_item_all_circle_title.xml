@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/community_gray_bg"
+              android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/community_gray_line"/>
+    <RelativeLayout
+        android:id="@+id/rl_btn_see_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/account_selector_option">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/community_home_hot_circle_next"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="@string/community_all"
+            android:textColor="@color/community_lgray"
+            android:textSize="@dimen/space_11"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/community_home_hot_circle_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/community_home_hot_circles"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_13"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/community_gray_line"/>
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_270"
+        android:visibility="visible">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/community_person_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/community_user_info_bg">
+
+            <LinearLayout
+                android:id="@+id/top_view_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.sjy.ttclub.widget.AlphaImageView
+                    android:id="@+id/btn_community_person_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/space_10"
+                    android:src="@drawable/community_person_back"/>
+
+                <LinearLayout
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.sjy.ttclub.widget.AlphaImageView
+                        android:id="@+id/btn_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:padding="@dimen/space_10"
+                        android:src="@drawable/community_report_icon"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/community_user_icon"
+                android:layout_width="@dimen/space_50"
+                android:layout_height="@dimen/space_50"
+                android:layout_below="@+id/top_view_layout"
+                android:layout_centerHorizontal="true"
+                fresco:roundAsCircle="true"/>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/community_user_icon"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    android:id="@+id/community_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="@dimen/space_2"
+                    android:text="@string/account_signup_nickname"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_19"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/user_honor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5">
+
+                <TextView
+                    android:id="@+id/user_praise_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:background="@drawable/user_honor_praise_bg"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingRight="@dimen/space_10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_10"/>
+
+                <TextView
+                    android:id="@+id/user_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/user_honor_level_bg"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingRight="@dimen/space_10"
+                    android:textColor="@color/shopping_items_other_color"
+                    android:textSize="@dimen/space_10"/>
+
+                <TextView
+                    android:id="@+id/user_specialIdentity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:background="@drawable/user_honor_special_identity_bg"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingRight="@dimen/space_10"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:textSize="@dimen/space_10"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/user_honor"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5">
+
+                <com.sjy.ttclub.widget.AlphaTextView
+                    android:id="@+id/btn_letter"
+                    android:layout_width="@dimen/space_107"
+                    android:layout_height="@dimen/space_30"
+                    android:layout_marginLeft="@dimen/space_49"
+                    android:background="@drawable/user_relationship_letter_bg"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/space_5"
+                    android:text="@string/community_user_info_letter"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_16"/>
+
+                <com.sjy.ttclub.widget.AlphaTextView
+                    android:id="@+id/btn_attention_in_userinfo"
+                    android:layout_width="@dimen/space_107"
+                    android:layout_height="@dimen/space_30"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space_49"
+                    android:background="@drawable/user_relationship_letter_bg"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/space_5"
+                    android:text="@string/community_user_info_following_ta"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_16"/>
+            </RelativeLayout>
+
+            <include layout="@layout/community_user_foot"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.sjy.ttclub.loadmore.LoadMoreListViewContainer
+        android:id="@+id/list_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/community_user_card_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/gray_bg"
+            android:dividerHeight="@dimen/space_10"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarStyle="outsideOverlay"/>
+    </com.sjy.ttclub.loadmore.LoadMoreListViewContainer>
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</LinearLayout>

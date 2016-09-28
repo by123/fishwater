@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/community_gray_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/post_theme_edit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:background="@color/white">
+
+                <EditText
+                    android:id="@+id/community_post_card_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/community_post_card_rule"
+                    android:layout_toStartOf="@+id/community_post_card_rule"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="@string/community_post_edit_hint_theme"
+                    android:padding="@dimen/space_10"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/community_send_post_hint_color"
+                    android:textSize="@dimen/space_13" />
+
+                <com.sjy.ttclub.widget.AlphaImageView
+                    android:id="@+id/community_post_card_rule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="@dimen/space_10"
+                    android:src="@drawable/community_circle_detail_info_icon"
+                    android:textColor="@color/community_color_man"
+                    android:textSize="@dimen/space_13" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/community_gray_line" />
+
+            <com.sjy.ttclub.emoji.EmoticonsEditText
+                android:id="@+id/community_post_card_content"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="@string/community_post_edit_hint_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/community_send_post_hint_color"
+                android:textSize="@dimen/space_13" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_16"
+                    android:text="@string/community_add_picture_message"
+                    android:textColor="@color/community_send_post_hint_color"
+                    android:textSize="@dimen/space_13" />
+
+                <com.sjy.ttclub.account.widget.NoScrollGridView
+                    android:id="@+id/add_pic_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="@dimen/space_16"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="10dp"
+                    android:horizontalSpacing="3dp"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/community_gray_line" />
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/rl_btn_emoji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/community_gray_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:text="@string/community_post_annoy"
+                android:textColor="@color/community_annoy_text_color" />
+
+            <ImageView
+                android:id="@+id/post_annoy_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/space_40"
+                android:background="@android:color/transparent"
+                android:paddingBottom="@dimen/space_5"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:paddingTop="@dimen/space_5"
+                android:src="@drawable/switch_off" />
+
+            <ImageView
+                android:id="@+id/btn_emoji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:padding="10dp"
+                android:src="@drawable/btn_expression" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

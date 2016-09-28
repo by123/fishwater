@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_shopping_car_goods_operation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_5">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/shopping_car_operation_items_img"
+            android:layout_width="@dimen/space_100"
+            android:layout_height="@dimen/space_100" />
+
+        <TextView
+            android:id="@+id/tv_num_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_30"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/product_buy_num_reduce"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/btn_number"
+            android:gravity="center"
+            android:textColor="#434343"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_num_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/product_buy_num_add"
+            android:clickable="true" />
+    </LinearLayout>
+</LinearLayout>

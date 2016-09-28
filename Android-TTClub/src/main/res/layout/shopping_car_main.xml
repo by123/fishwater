@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cart="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View style="@style/order_common_line" />
+
+    <ListView
+        android:id="@+id/lv_shopping_car"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0"
+        android:layout_weight="1"></ListView>
+
+    <View style="@style/order_common_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_shopping_car_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_shopping_car_all"
+            android:layout_width="@dimen/space_70"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_10"
+            android:button="@drawable/checkbox_green"
+            android:paddingLeft="@dimen/space_10"
+            android:text="全选"
+            android:textColor="@color/actionsheet_black"
+            android:textSize="@dimen/space_13" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/shopping_car_goods_cost_all"
+                android:textColor="@color/account_setting_gray"
+                android:textSize="@dimen/space_15" />
+
+            <com.sjy.ttclub.widget.PriceView
+                android:id="@+id/tv_shopping_car_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_5"
+                android:layout_marginRight="@dimen/space_15"
+                cart:decimalSize="@dimen/space_10"
+                cart:intSize="@dimen/space_16"
+                cart:moneySize="@dimen/space_10"
+                cart:strike="false"
+                cart:textColor="@color/shopping_panic_light_color" />
+
+            <TextView
+                android:id="@+id/tv_shopping_car_operation"
+                android:layout_width="@dimen/space_110"
+                android:layout_height="match_parent"
+                android:background="@drawable/buy_panel_buy_text"
+                android:gravity="center"
+                android:paddingLeft="@dimen/space_10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

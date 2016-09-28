@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_55">
+
+    <com.sjy.ttclub.widget.AlphaImageView
+        android:id="@+id/record_data_title_left_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:padding="@dimen/space_16"
+        android:src="@drawable/record_data_arrow_left"/>
+
+
+    <TextView
+        android:id="@+id/record_data_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/space_4"
+        android:background="@drawable/record_data_title_bg"
+        android:gravity="center"
+        android:paddingLeft="@dimen/space_30"
+        android:paddingRight="@dimen/space_30"
+        android:text="偷窥啪啪"
+        android:textColor="@color/white"
+        android:textSize="@dimen/space_16"/>
+
+    <com.sjy.ttclub.widget.AlphaImageView
+        android:id="@+id/record_data_title_right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:padding="@dimen/space_16"
+        android:src="@drawable/record_data_arrow_right"/>
+
+
+</FrameLayout>

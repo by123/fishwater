@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <View android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/community_gray_line"/>
+    <LinearLayout
+        android:id="@+id/ll_evolution_tools"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/gray_bg"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/comment_title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_20"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingTop="@dimen/space_10"
+            android:layout_weight="1.0"
+            android:textColor="@color/llgray"
+            android:textSize="@dimen/space_15"
+            />
+        <!--<View android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_line"/>
+        <Button
+            android:id="@+id/btn_only_host"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:text="@string/text_community_only_host"
+            android:textSize="@dimen/text_community_size_13"
+            android:background="@drawable/btn_bg"
+            />
+        <View android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_line"/>
+        <Button
+            android:id="@+id/btn_hot_evolution"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_community_size_13"
+            android:text="@string/text_community_hot_evolution"
+            android:background="@drawable/btn_bg"
+            />
+        <View android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_line"/>
+        <Button
+            android:id="@+id/btn_see_other"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:text="@string/text_community_see_other"
+            android:textSize="@dimen/text_community_size_13"
+            android:background="@drawable/btn_bg"/>-->
+    </LinearLayout>
+     <View android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/community_gray_line"/>
+   <!-- <RelativeLayout
+        android:id="@+id/rl_no_evolution_tips"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/gray_line">
+        <TextView
+            android:id="@+id/no_evolution_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_no_comments_tips"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_community_size_15"
+            android:textColor="@color/llgray"/>
+    </RelativeLayout>-->
+</LinearLayout>

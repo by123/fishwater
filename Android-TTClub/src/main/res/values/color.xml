@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2015. SJY.JIANGSU Corporation. All rights reserved
+  -->
+
+<resources>
+    <color name="transparent">#00000000</color>
+    <!--白色  -->
+    <color name="white">#ffffff</color>
+    <!-- 点击时的颜色 -->
+    <color name="settings_item_press">#e5e5e5</color>
+    <!--灰色背景  -->
+    <color name="white_light">#F6F6F6</color>
+    <color name="black_dark">#333333</color>
+    <!-- 黑色 -->
+    <color name="black">#434343</color>
+    <color name="deep_black">#000000</color>
+    <color name="black_light">#777777</color>
+    <!-- 黑色 -->
+    <color name="pink">#fc1255</color>
+    <!-- 浅灰 -->
+    <color name="lgray">#5f5f5f</color>
+    <!-- 浅浅灰 -->
+    <color name="llgray">#999999</color>
+    <!--灰色背景  -->
+    <color name="gray_bg">#F6F6F6</color>
+    <!--灰色分割线颜色 -->
+    <color name="divider_gray_color">#e5e5e5</color>
+    <!-- divider color -->
+    <color name="divider_color">#cccccc</color>
+    <!--default window title and bg-->
+    <color name="title_text_color">#fc1255</color>
+    <color name="title_color">#fc1255</color>
+    <color name="title_text_disable_color">#2ffc1255</color>
+    <color name="title_text_pressed_color">#80fc1255</color>
+    <color name="title_bg_color">#ffffff</color>
+    <color name="defaultwindow_bg_color">#ffffff</color>
+    <color name="titlebar_item_text_enable_color">#ff434343</color>
+    <color name="titlebar_item_text_disable_color">#2f434343</color>
+    <color name="titlebar_item_pressed_color">#80434343</color>
+    <color name="titlebar_item_red_tip_color">#fc1255</color>
+    <color name="tab_text_selected_color">#fc1255</color>
+    <color name="tab_text_default_color">#434343</color>
+    <color name="tab_cursor_color">#fc1255</color>
+    <!-- splash window color -->
+    <color name="splash_window_bg_color">#ffffff</color>
+    <color name="splash_text_color">#333333</color>
+    <!-- dialog -->
+    <color name="dialog_title_color">#333333</color>
+    <color name="dialog_text_color">#434343</color>
+    <!-- dialog button-->
+    <color name="dialog_button_text_default_color">#666666</color>
+    <color name="dialog_button_text_selected_color">#666666</color>
+    <color name="dialog_button_text_disable_color">#666666</color>
+    <color name="dialog_button_bg_normal">#ffffff</color>
+    <color name="dialog_button_bg_pressed">#f2f2f2</color>
+    <color name="dialog_button_default_text_color">#333333</color>
+    <color name="dialog_button_highlight_text_color">#239ff2</color>
+    <color name="dialog_divider_color">#cccccc</color>
+    <!--share-->
+    <color name="share_panel_window_bg_color">#70000000</color>
+    <color name="share_platform_text_color">#666666</color>
+    <color name="share_list_item_pressed">#eeeeee</color>
+    <color name="share_list_item_text_color">#4E4C59</color>
+    <!--image cycle view-->
+    <color name="image_cycle_view_text_bg">#70000000</color>
+    <color name="image_cycle_view_text_color">#ffffff</color>
+    <!--action sheet-->
+    <color name="actionsheet_blue">#239ff2</color>
+    <color name="actionsheet_red">#de3232</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_black">#333333</color>
+    <color name="actionsheet_blue_light">#83cde6</color>
+    <!--wheel view-->
+    <color name="wheel_view_border_color">#83cde6</color>
+    <color name="wheel_view_selected_color">#239ff2</color>
+    <color name="wheel_view_default_color">#434343</color>
+    <!-- CropWindow -->
+    <color name="photo_crop_view_dim_color">#80000000</color>
+    <color name="photo_crop_button_pressed_color">#19ececec</color>
+    <!--emoji keyboard-->
+    <color name="emoji_divider_color">#e5e5e5</color>
+    <color name="emoji_divider_spilt_line_color">#CFCFCF</color>
+    <color name="toolbar_spilt_line">#CDCDCD</color>
+    <color name="toolbar_btn_select">#D9D9D9</color>
+    <color name="toolbar_btn_nomal">#ffffff</color>
+    <!--首页top-->
+    <color name="home_bottom_bar_bg">#212121</color>
+    <color name="home_text_default_color">#707070</color>
+    <color name="home_text_selected_color">#FD3F75</color>
+    <color name="homepage_list_divider_color">#e2e2e2</color>
+    <color name="homepage_content_bg_color">#e2e2e2</color>
+    <color name="homepage_test_content_mask">#20000000</color>
+    <color name="homepage_toplayout_divider_color">#f0f0f0</color>
+    <color name="record_panel_background">#aa000000</color>
+    <!--homepage detail-->
+    <color name="homepage_feed_detail_more_text_color">#fc1255</color>
+    <color name="homepage_article_detail_product_buy">#ff5560</color>
+
+    <!--涨姿势-->
+    <color name="knowledge_detail_optional">#fc1255</color>
+    <color name="knowledge_detail_no_optional">#cacaca</color>
+    <!--新记录-->
+    <color name="record_top_bg">#fc1255</color>
+    <color name="record_list_items_bg">#ffffff</color>
+    <color name="record_list_items_datetime">#767676</color>
+    <color name="record_list_items_content">#a5a5a5</color>
+    <color name="record_list_item_holiday_content">#F39800</color>
+    <color name="record_list_items_side">#e8e8e8</color>
+    <color name="record_date_view_text_normal">#626262</color>
+    <color name="record_date_view_text_light">#c0c0c0</color>
+    <color name="record_date_view_text_super_light">#fc1255</color>
+    <color name="record_date_view_blue_light">#d8d8d8</color>
+    <color name="record_date_view_blue_dark">#d8d8d8</color>
+    <color name="record_date_view_stroke">#c8c8c8</color>
+    <color name="record_date_view_bg">#f0f0f0</color>
+    <color name="record_window_title">#5a5a5a</color>
+    <color name="record_window_bottom_title">#c2c2c2</color>
+    <color name="record_self_nickname">#383838</color>
+    <color name="record_self_text_count1">#000000</color>
+    <color name="record_self_text_count2">#F81A5A</color>
+    <color name="record_where_color1">#d5d5d5</color>
+    <color name="record_where_color2">#FB306A</color>
+    <color name="record_where_color3">#00A0E9</color>
+    <color name="record_where_color4">#EFC812</color>
+    <color name="record_where_color5">#6ABA4E</color>
+    <!--偷kui-->
+    <color name="record_peep_chart_self">#AE5DA1</color>
+    <color name="record_peep_chart_felling">#f9b000</color>
+    <color name="record_peep_chart_heat">#FF3C74</color>
+    <color name="record_peep_chart_liven">#1CD7B6</color>
+    <color name="record_peep_chart_tools">#00B7EE</color>
+    <color name="record_peep_chart_time">#7d66cc</color>
+    <color name="record_peep_chart_no_papa">#FFD014</color>
+    <color name="record_new_date_view_text_normal">#595959</color>
+    <color name="record_new_date_view_week">#9b9b9b</color>
+
+    <!--收藏-->
+    <color name="collect_price_color">#FD4A2E</color>
+    <color name="collect_delete_normal">#ff5560</color>
+    <color name="collect_delete_press">#e0434d</color>
+
+    <!-- 我的页面-->
+    <color name="account_main_back_color">#f6f6f6</color>
+    <!-- 一度浅灰色 -->
+    <color name="account_gray">#333333</color>
+    <color name="account_setting_gray">#777777</color>
+    <color name="account_third_paltform_login_gray">#cccccc</color>
+    <!-- 选项view背景色 -->
+    <color name="account_view_checked_background">#e5e5e5</color>
+    <color name="account_setting_background">#f6f6f6</color>
+    <!--半透明-->
+    <color name="account_translucence">#1000</color>
+    <!-- 点击时的颜色 -->
+    <color name="account_press">#e5e5e5</color>
+
+    <color name="account_text_color">#f3f3f3</color>
+    <color name="account_login_text_color_normal">#fc1255</color>
+    <color name="account_login_text_color_on">#55fc1255</color>
+    <color name="account_alert_dialog_line">#c6c6c6</color>
+    <color name="account_round_color">#fd5a88</color>
+    <!--价格-->
+    <color name="price_text_color">#e9523f</color>
+
+    <!--社区-->
+    <!-- 黑色 -->
+    <color name="community_black">#434343</color>
+    <!--白色  -->
+    <color name="community_white">#ffffff</color>
+    <!-- 浅灰 -->
+    <color name="community_lgray">#5f5f5f</color>
+    <!-- 浅浅灰 -->
+    <color name="community_llgray">#999999</color>
+    <!--粉红色-->
+    <color name="community_pink">#fc1255</color>
+    <!--灰色分割线颜色 -->
+    <color name="community_gray_line">#e5e5e5</color>
+    <color name="community_previous_comment_color">#f4f4f4</color>
+    <!-- 紫色 -->
+    <color name="textcolor">#713b94</color>
+    <!--深灰色-->
+    <color name="community_deep_gray">#676767</color>
+    <!-- 男 -->
+    <color name="community_color_man">#99dfff</color>
+    <!-- 女 -->
+    <color name="community_color_woman">#ff7ba1</color>
+    <!--灰色背景  -->
+    <color name="community_gray_bg">#F6F6F6</color>
+    <!--黄色字体  -->
+    <color name="community_yellow">#FFAA00</color>
+    <color name="community_brain_trust_bg_color">#2ab8c1</color>
+    <color name="community_red_text">#ff5560</color>
+    <color name="community_praise_text_color">#fc1255</color>
+    <color name="community_editer_color">#f0f1f2</color>
+    <color name="community_question_ask_text_color">#fc1255</color>
+    <color name="community_host_select_color">#fd3f75</color>
+    <color name="community_tip_comment_color">#ebebeb</color>
+    <!-- 浅灰 -->
+    <color name="community_post_detail_content_color">#777777</color>
+    <!-- 浅灰 -->
+    <color name="community_nick_name_gray">#898998</color>
+    <!-- 黑色 -->
+    <color name="community_send_post_hint_color">#C1C1C1</color>
+    <color name="community_annoy_text_color">#fd3f75</color>
+    <!--福利社-->
+    <color name="shopping_bg">#F6F6F6</color>
+    <color name="shopping_title">#fc1255</color>
+    <color name="shopping_main_title">#0d0d0d</color>
+    <color name="shopping_common_line">#e5e5e5</color>
+    <color name="shopping_items_title_color">#0D0D0D</color>
+    <color name="shopping_items_other_color">#898989</color>
+    <color name="shopping_panic_light_color">#ff5560</color>
+    <color name="shopping_topic_list_foot_loading_color">#999999</color>
+    <color name="shopping_category_list_text">#0B0305</color>
+    <color name="shopping_category_panel_bg_color">#70000000</color>
+    <color name="shopping_category_top_view_grid_bg">#f0f0f0</color>
+    <color name="shopping_category_labels">#d0d0d0</color>
+
+    <color name="shopping_buy_panel_buy_car_text_default">#ff9c46</color>
+    <color name="shopping_buy_panel_buy_car_text_check">#ec8b37</color>
+    <color name="shopping_collect_text_color">#999999</color>
+    <color name="shopping_collected_text_color">#ff9c46</color>
+
+    <color name="order_price_text">#FD4A2E</color>
+    <color name="order_commit_text">#ff5560</color>
+    <color name="order_pay_btn_bg">#037BFF</color>
+    <color name="order_failed_tips">#ff9c46</color>
+    <color name="order_success_tips">#02c08d</color>
+    <color name="order_detail_logistics_text">#25AE5F</color>
+    <color name="order_detail_logistics_time">#aaaaaa</color>
+    <color name="order_detail_address">#595959</color>
+    <color name="order_detail_state_bg">#FF95B3</color>
+    <color name="order_detail_delete_bg">#b8b8b8</color>
+    <color name="order_review_hint">#C1C1C1</color>
+    <color name="order_review_btn_finish">#C1C1C1</color>
+    <color name="order_review_btn">#fc1255</color>
+    <color name="order_logistics_bg">#617792</color>
+    <color name="order_logistics_bot">#cecece</color>
+    <color name="order_logistics_title">#C8C8C8</color>
+
+    <!-- 男 -->
+    <color name="account_level_color_man">#518fff</color>
+    <color name="account_level_color_woman">#fc1255</color>
+
+    <!-- 购物车 -->
+    <color name="shopping_car_invalid_goods_select">#838383</color>
+    <color name="shopping_car_invalid_goods_default">#999999</color>
+
+    <color name="guide_head_circle_board_color">#E8EAE9</color>
+    <color name="guide_user_sex_text_color">#cccccc</color>
+    <color name="guide_user_tip_text_color">#808080</color>
+    <color name="guide_user_man_text_color">#23AEF3</color>
+    <color name="guide_user_woman_text_color">#FF5E75</color>
+    <color name="guide_user_bg_color">#333233</color>
+    <color name="guide_user_text_color">#F5F5F5</color>
+    <color name="guide_commit_button_bg_color">#FD3F75</color>
+    <color name="guide_merried_state_select_color">#3b3b3b</color>
+    <!--个人中心的背景色-->
+    <color name="community_user_info_bg">#cc000000</color>
+
+</resources>

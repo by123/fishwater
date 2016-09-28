@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.srain.cube.views.ptr.PtrClassicFrameLayout
+    android:id="@+id/homepage_prt"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <com.sjy.ttclub.homepage.HomepageFrameLayout
+        android:id="@+id/fl_homepage_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homepage_content_bg_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.sjy.ttclub.homepage.HomepageTopLayout
+                android:id="@+id/homepage_toplayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.sjy.ttclub.widget.LoadingLayout
+                android:id="@+id/homepage_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <com.sjy.ttclub.loadmore.LoadMoreListViewContainer
+            android:id="@+id/homepage_load_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.sjy.ttclub.homepage.HomepageListView
+                android:id="@+id/homepage_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:dividerHeight="0px"
+                android:drawSelectorOnTop="true"
+                android:fastScrollEnabled="false"
+                android:listSelector="@drawable/default_listview_seletor"/>
+
+        </com.sjy.ttclub.loadmore.LoadMoreListViewContainer>
+
+    </com.sjy.ttclub.homepage.HomepageFrameLayout>
+
+
+</in.srain.cube.views.ptr.PtrClassicFrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white_light">
+
+    <ListView
+        android:id="@+id/knowledge_list_layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="@dimen/space_15"
+        android:divider="@color/transparent"
+        android:drawSelectorOnTop="true"
+        android:fastScrollEnabled="false"
+        android:listSelector="@drawable/default_listview_seletor"/>
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/knowledge_list_layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</FrameLayout>

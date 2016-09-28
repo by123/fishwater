@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/community_home_find"
+        android:textColor="@color/community_pink"
+        android:textSize="@dimen/space_18" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/community_gray_line" />
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/home_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:scrollbars="none" />
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone" />
+</LinearLayout>
+ 

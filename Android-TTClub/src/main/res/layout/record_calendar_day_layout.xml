@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sjy.ttclub.record.widget.DayView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/record_calendar_btn_bg"
+    android:drawableBottom="@drawable/record_calendar_btn_focus"
+    android:gravity="center"
+    android:textColor="@color/record_calendar_text"
+    android:textSize="@dimen/record_date_view_text_size" />

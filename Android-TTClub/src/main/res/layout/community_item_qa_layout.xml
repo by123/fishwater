@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/community_gray_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/community_gray_line" />
+
+    <RelativeLayout
+        android:id="@+id/rlBtnSeeMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/account_selector_option"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/community_home_hot_circle_next"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="@string/community_home_more"
+            android:textColor="@color/community_lgray"
+            android:textSize="@dimen/space_11" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/community_home_qa_title_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/community_home_qa"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_13" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/community_gray_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_qa_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/account_selector_option"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textQuestionTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_15" />
+
+        <TextView
+            android:id="@+id/textQuestionContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/llgray"
+            android:textSize="@dimen/space_11"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/answerLinelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textAnswerContent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/space_10"
+                android:background="@drawable/comunity_qa_answer_bg"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="3"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_13" />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/answererHeadIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top"
+                fresco:backgroundImage="@color/llgray"
+                fresco:roundAsCircle="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/community_gray_line" />
+</LinearLayout>

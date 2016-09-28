@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <View
+        style="@style/account_line_style"
+        android:layout_marginTop="@dimen/space_10"/>
+
+    <RelativeLayout
+        android:id="@+id/reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/account_message_reply"
+            style="@style/account_options_style"
+            android:drawableLeft="@drawable/account_message_reply_me"
+            android:text="@string/account_message_reply_me"/>
+
+        <TextView
+            android:id="@+id/account_message_reply_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/account_message_red_point"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_10"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/account_line_style"
+        android:layout_marginBottom="@dimen/space_10"/>
+
+    <RelativeLayout
+        android:id="@+id/same"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/account_message_agree"
+            style="@style/account_options_style"
+            android:drawableLeft="@drawable/account_message_thumb"
+            android:text="@string/account_message_agree"/>
+
+        <TextView
+            android:id="@+id/account_message_agree_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/account_message_red_point"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_10"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/account_line_style"
+        android:layout_marginTop="@dimen/space_10"/>
+
+    <com.sjy.ttclub.loadmore.LoadMoreListViewContainer
+        android:id="@+id/account_message_load_more"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0"
+        android:layout_weight="1"
+        android:background="@color/gray_bg">
+
+        <ListView
+            android:id="@+id/account_message_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarStyle="outsideOverlay"/>
+    </com.sjy.ttclub.loadmore.LoadMoreListViewContainer>
+
+    <!--没网络-->
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/account_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <!--&lt;!&ndash;数据为0&ndash;&gt;-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/account_relationship_no_data"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:src="@drawable/account_message_no_card_bg"-->
+            <!--android:visibility="gone"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <View style="@style/account_line_style"/>
+
+    <LinearLayout
+        android:id="@+id/account_message_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0"
+        android:layout_weight="0.1"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/account_message_all_check"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/account_message_btn_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/account_message_check"
+            android:textColor="@color/llgray"
+            android:textSize="@dimen/space_16"/>
+
+        <View
+            android:layout_width="@dimen/divider_width"
+            android:layout_height="wrap_content"
+            android:background="@color/account_view_checked_background"/>
+
+        <TextView
+            android:id="@+id/account_message_delete"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/account_message_btn_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/account_message_delete"
+            android:textColor="@color/llgray"
+            android:textSize="@dimen/space_16"/>
+
+    </LinearLayout>
+</LinearLayout>

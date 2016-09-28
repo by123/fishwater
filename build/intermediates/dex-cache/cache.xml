@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/libs/alipayutdid.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4345fa0a5a7768f2f9c86aaab7db9e2906765193">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/alipayutdid-9cf0c1f50b808a42641c2ac04abc1fb1e95f915d.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/support-annotations-23.1.0-13e1bd9127480eeec96928c40360608e3f47eaa6.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/libs/com.umeng.message.lib_v2.6.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="7591c11f29ebda071ea8cfe790ccb76f35843d68">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/com.umeng.message.lib_v2.6.0-05f2e64d4d981e081511e4afb257bfea0c1795d5.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/bolts-android-1.1.4-b2186858c8c810b0decf795d297360afa08174a1.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="6b8949f96f34d0750b7fef9f93ef50ecae4899d3">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/classes-51c95b2b652087ba3cfbf96f881b2c7a768c1536.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/libs/libammsdk.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="47f4993168154fa73377d7470b9f6887d48a8023">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/libammsdk-1824ad323edd09c1216cc34699ffa8034bc3cae0.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/libs/umeng-update-v2.6.0.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="7bfeea30c4995f90a4374ce4177772a4579f2797">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/umeng-update-v2.6.0.1-8297cb1fe5ccc09b5bb3ba2829ba2e6bf2aacdb0.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/internal_impl-23.1.0-183ce46c467bf3ae49175354d8d9d2f3bd5a76e3.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/libs/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/gson-2.2.4-9fe3bd85a4818841971dbf8da8a571d55d81dfb4.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="522e5e0b204e366bc5b9d5e427ca135c99e4710b">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/classes-0c1cc2f7f2e406635f043cc7a9b8fa0352e189ca.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/classes-8161949b191d6bcac9e1fb0afcad4ea605c721f5.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/exploded-aar/fishwater/ExRecyclerView/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="57893d7eabc019db2f29c0361428586cf6337c8a">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/classes-65cb389291a9fc217363dfcfc642b81c9e12dd1f.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/classes-1d2bb037035d045cdfb85fd945fbdd5a425639d6.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="2bd08e2187860adf49dffd1ab6d5ab722e47cc73">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/classes-72c59d9f4c531f58ef6034c2b50ad72096b512cd.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/libs/alipaysecsdk.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="7413c074c9edf523050267b93d0875151dc4b644">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/alipaysecsdk-f608d608dd8dbdaf04b1c40ef05b4223af2daad6.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/libs/open_sdk_r5509_lite.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="84c7cf027dfd4517eb51d5898999a7f2f74f99cc">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/open_sdk_r5509_lite-0d325481eb08876183172d332293e099cba66b30.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/classes-16b2cd1242fc63e726c1692c66ea3848a33b3d0e.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/exploded-aar/fishwater/androidUltraPullToRefreshlibrary/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e94bfdeb263f993d5c77c3de7b274cfabce26f00">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/classes-61df1be6da8fbf6f1a31acfa6c7a1fd3ef755c53.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/libs/umeng-analytics-v5.5.3.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="5d503ec571e2e98d972209afa203f94d11882c15">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/umeng-analytics-v5.5.3-fa1fc3bddd8dfb57353728ad26c91bd174f9e68a.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/library-2.4.0-9c97542619e8856bb20c8c9f8421e628c388776f.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/classes-b0ed47622b5bd67130ad97ae0950ac76a6b4edd1.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/libs/weiboSDKCore_3.1.2.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="1c0bfcddc15de1e8a90ff166da0b9abe011346af">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/weiboSDKCore_3.1.2-5b560f3666dd8c7f0566f76afc414825d595d7c5.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/exploded-aar/org.xutils/xutils/3.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="054078def32dcafc1c4172dcfc464c96dbe3c510">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/classes-c2bfa3f43f25708de287b86b5d5cf850e7a20885.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/libs/alipaysdk.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="49af714f3cf9458d9123ce69dcaaa46644fc93ca">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/alipaysdk-8dac3da2e4057eaf78f008347377077bb00dbc26.jar" />
+    </item>
+    <item
+        jar="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="f0de0891b54ed8080132c696e0f9033c1bdb3509">
+        <dex dex="/Users/by.huang/Desktop/fishwater/Android-TTClub/build/intermediates/pre-dexed/QQ/debug/classes-5514e6cb87a6f8dede5ce9b708997fadf71f7f31.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sjy.ttclub.widget.CustomScrollView
+        android:id="@+id/record_self_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/record_date_view_bg"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/record_self_head_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_156"
+                android:background="@color/record_list_items_bg">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/record_self_head_image"
+                    android:layout_width="@dimen/space_66"
+                    android:layout_height="@dimen/space_66"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_28"
+                    android:layout_toLeftOf="@id/account_personal_head_image_arrow"
+                    android:background="@drawable/record_user_icon_bg"
+                    android:padding="@dimen/space_4"
+                    android:scaleType="centerCrop"
+                    fresco:placeholderImage="@drawable/account_no_login_head_image"
+                    fresco:roundAsCircle="true"/>
+
+                <TextView
+                    android:id="@+id/record_self_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="@dimen/space_29"
+                    android:textColor="@color/record_self_nickname"
+                    android:textSize="@dimen/space_13"/>
+
+            </FrameLayout>
+
+            <include
+                android:id="@+id/record_self_title_layout"
+                layout="@layout/record_data_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginTop="@dimen/space_12"/>
+
+            <com.sjy.ttclub.widget.ScrollViewPager
+                android:id="@+id/record_self_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_12"/>
+
+        </LinearLayout>
+    </com.sjy.ttclub.widget.CustomScrollView>
+
+    <include
+        android:id="@+id/record_self_float_title_layout"
+        layout="@layout/record_data_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:visibility="invisible"/>
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/record_self_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</FrameLayout>

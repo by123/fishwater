@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View style="@style/order_common_line"></View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_10">
+
+        <TextView
+            android:id="@+id/items_order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textColor="@color/shopping_items_other_color" />
+
+        <TextView
+            android:id="@+id/items_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/shopping_items_other_color" />
+    </FrameLayout>
+
+    <View style="@style/order_common_line"></View>
+
+    <ListView
+        android:id="@+id/items_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"></ListView>
+</LinearLayout>

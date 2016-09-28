@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_light"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                style="@style/account_line_style"
+                android:paddingTop="@dimen/space_10"/>
+
+            <RelativeLayout
+                android:id="@+id/account_personal_pic_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/account_selector_option">
+
+                <TextView
+                    style="@style/account_options_style"
+                    android:layout_centerVertical="true"
+                    android:text="@string/account_personal_head_image"/>
+
+                <ImageView
+                    android:id="@+id/account_personal_head_image_arrow"
+                    style="@style/account_arrow"/>
+
+                <!--头像-->
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/account_personal_head_image"
+                    android:layout_width="@dimen/space_70"
+                    android:layout_height="@dimen/space_70"
+                    android:layout_gravity="center"
+                    android:layout_toLeftOf="@id/account_personal_head_image_arrow"
+                    android:padding="@dimen/space_5"
+                    android:scaleType="centerCrop"
+                    fresco:placeholderImage="@drawable/account_no_login_head_image"
+                    fresco:roundAsCircle="true"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/account_line_style"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"/>
+
+            <RelativeLayout
+                android:id="@+id/account_personal_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/account_selector_option">
+
+                <TextView
+                    style="@style/account_options_style"
+                    android:text="@string/account_signup_nickname"/>
+
+                <ImageView
+                    android:id="@+id/account_personal_nickname_arrow"
+                    style="@style/account_arrow"/>
+
+                <TextView
+                    android:id="@+id/account_nickname"
+                    style="@style/account_options_style"
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@id/account_personal_nickname_arrow"
+                    android:paddingRight="@dimen/space_5"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/account_line_style"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/account_selector_option">
+
+                <TextView
+                    style="@style/account_options_style"
+                    android:text="@string/account_personal_sex"/>
+
+                <TextView
+                    android:id="@+id/account_sex"
+                    style="@style/account_options_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="@dimen/space_28"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/account_line_style"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"/>
+
+            <RelativeLayout
+                android:id="@+id/account_personal_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/account_selector_option">
+
+                <TextView
+                    style="@style/account_options_style"
+                    android:text="@string/account_personal_age"/>
+
+                <ImageView
+                    android:id="@+id/account_personal_age_arrow"
+                    style="@style/account_arrow"/>
+
+                <TextView
+                    android:id="@+id/account_age"
+                    style="@style/account_options_style"
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@id/account_personal_age_arrow"
+                    android:paddingRight="@dimen/space_5"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/account_line_style"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"/>
+
+            <!--婚恋状况-->
+            <RelativeLayout
+                android:id="@+id/account_personal_marriage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/account_selector_option">
+
+                <TextView
+                    style="@style/account_options_style"
+                    android:text="@string/account_personal_marriage"/>
+
+                <ImageView
+                    android:id="@+id/account_personal_marriage_arrow"
+                    style="@style/account_arrow"/>
+
+                <TextView
+                    android:id="@+id/account_marriage"
+                    style="@style/account_options_style"
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@id/account_personal_marriage_arrow"
+                    android:paddingRight="@dimen/space_5"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/account_line_style"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"/>
+
+            <!--性经验-->
+            <RelativeLayout
+                android:id="@+id/account_personal_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/account_selector_option">
+
+                <TextView
+                    style="@style/account_options_style"
+                    android:text="@string/account_personal_experience"/>
+
+                <ImageView
+                    android:id="@+id/account_personal_experience_arrow"
+                    style="@style/account_arrow"/>
+
+                <TextView
+                    android:id="@+id/account_experience"
+                    style="@style/account_options_style"
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@id/account_personal_experience_arrow"
+                    android:paddingRight="@dimen/space_5"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/account_line_style"
+                android:layout_marginTop="@dimen/space_10"/>
+
+            <RelativeLayout
+                android:id="@+id/account_personal_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/account_selector_option">
+
+                <TextView
+                    style="@style/account_options_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_personal_level"/>
+
+                <ImageView
+                    android:id="@+id/account_personal_level_arrow"
+                    style="@style/account_arrow"/>
+
+                <TextView
+                    android:id="@+id/account_level"
+                    style="@style/account_options_style"
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@id/account_personal_level_arrow"
+                    android:paddingRight="@dimen/space_5"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/account_line_style"
+                android:layout_marginTop="@dimen/space_10"/>
+
+            <RelativeLayout
+                android:id="@+id/account_personal_blacklist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/account_selector_option">
+
+                <TextView
+                    style="@style/account_options_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_personal_blacklist"/>
+
+                <ImageView style="@style/account_arrow"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/account_line_style"
+                android:layout_marginTop="@dimen/space_10"/>
+
+            <RelativeLayout
+                android:id="@+id/account_personal_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/account_selector_option">
+
+                <TextView
+                    style="@style/account_options_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_personal_change_password"/>
+
+                <ImageView style="@style/account_arrow"/>
+            </RelativeLayout>
+
+            <View style="@style/account_line_style"/>
+
+            <Button
+                android:id="@+id/account_personal_logout"
+                style="@style/account_login_button"
+                android:background="@drawable/account_selector_setting_exit_bg"
+                android:visibility="gone"
+                android:text="@string/account_setting_exit"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

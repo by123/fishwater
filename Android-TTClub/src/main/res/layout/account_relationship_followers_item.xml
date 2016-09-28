@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_72"
+    android:background="@drawable/account_selector_option">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/account_follower_pic_image"
+        android:layout_width="@dimen/space_40"
+        android:layout_height="@dimen/space_40"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_5"
+        fresco:roundAsCircle="true"/>
+
+    <LinearLayout
+        android:id="@+id/account_follower_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_toRightOf="@+id/account_follower_pic_image"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/space_18">
+
+        <TextView
+            android:id="@+id/account_follower_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_2"
+            android:textColor="@color/community_black"
+            android:textSize="@dimen/space_15"/>
+
+        <TextView
+            android:id="@+id/account_follower_user_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_2"
+            android:layout_marginLeft="@dimen/space_10"
+            android:gravity="center"
+            android:textColor="@color/account_gray"
+            android:textSize="@dimen/space_12"/>
+    </LinearLayout>
+
+    <com.sjy.ttclub.widget.AlphaImageView
+        android:id="@+id/account_follower_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/space_15"/>
+
+    <View
+        style="@style/account_line_style"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15"/>
+</RelativeLayout>

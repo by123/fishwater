@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_my_foot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/space_5">
+
+    <LinearLayout
+        android:id="@+id/user_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_post_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_5"
+            android:textColor="@color/account_press"
+            android:textSize="@dimen/space_14"/>
+
+        <TextView
+            android:id="@+id/user_post_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/community_user_info_post_title"
+            android:textColor="@color/account_press"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/divider_width"
+        android:layout_height="@dimen/space_28"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/space_2"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/user_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/user_article_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_5"
+            android:textColor="@color/account_press"
+            android:textSize="@dimen/space_14"/>
+
+        <TextView
+            android:id="@+id/user_article_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/community_user_info_article_title"
+            android:textColor="@color/account_press"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/user_line"
+        android:layout_width="@dimen/divider_width"
+        android:layout_height="@dimen/space_28"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/space_2"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/user_followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_followers_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_5"
+            android:textColor="@color/account_press"
+            android:textSize="@dimen/space_14"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/community_user_info_fans_title"
+            android:textColor="@color/account_press"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/divider_width"
+        android:layout_height="@dimen/space_28"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/space_2"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/user_following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_following_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_5"
+            android:textColor="@color/account_press"
+            android:textSize="@dimen/space_14"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/community_user_info_following_title"
+            android:textColor="@color/account_press"/>
+
+    </LinearLayout>
+
+</LinearLayout>

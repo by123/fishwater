@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cart="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/masonry_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/space_5"
+    android:background="@drawable/shopping_selector_option"
+    android:orientation="vertical"
+    android:padding="@dimen/space_5">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/masonry_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/masonry_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:gravity="left"
+        android:maxLines="2"
+        android:textColor="@color/shopping_items_title_color"
+        android:textSize="@dimen/space_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_15"
+        android:orientation="horizontal">
+
+        <com.sjy.ttclub.widget.PriceView
+            android:id="@+id/masonry_item_sale_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="@dimen/space_5"
+            cart:decimalSize="@dimen/space_10"
+            cart:intSize="@dimen/space_16"
+            cart:moneySize="@dimen/space_10"
+            cart:strike="false"
+            cart:textColor="@color/shopping_panic_light_color" />
+
+        <TextView
+            android:id="@+id/masonry_item_sale_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="@dimen/space_5" />
+    </LinearLayout>
+</LinearLayout>

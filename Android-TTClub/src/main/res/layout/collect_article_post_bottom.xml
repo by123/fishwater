@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/divider_gray_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/collect_select_all_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:button="@drawable/checkbox_green"
+            android:checked="false"/>
+
+        <TextView
+            android:id="@+id/collect_select_all_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/collect_select_all_checkbox"
+            android:text="@string/collect_checkall"
+            android:textColor="@color/black_dark"
+            android:textSize="@dimen/space_13"/>
+
+
+        <com.sjy.ttclub.widget.AlphaTextView
+            android:id="@+id/collect_select_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/collect_select_all_text"
+            android:background="@color/collect_delete_press"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingLeft="@dimen/space_25"
+            android:paddingRight="@dimen/space_25"
+            android:paddingTop="@dimen/space_15"
+            android:text="@string/collect_delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_15"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

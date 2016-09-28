@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_bg"
+              android:orientation="vertical">
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/hot_card_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:visibility="visible"
+        >
+
+        <com.sjy.ttclub.loadmore.LoadMoreListViewContainer
+            android:id="@+id/hot_card_load_more_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ListView
+                android:id="@+id/hot_card_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:divider="@null"
+                >
+            </ListView>
+        </com.sjy.ttclub.loadmore.LoadMoreListViewContainer>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/no_data_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        ></com.sjy.ttclub.widget.LoadingLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 默认颜色 -->
+    <item android:drawable="@color/white" android:state_pressed="false"></item>
+    <!-- 点击时的颜色 -->
+    <item android:drawable="@color/settings_item_press" android:state_pressed="true"></item>
+</selector>

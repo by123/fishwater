@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_light"
+    android:orientation="vertical">
+
+    <View
+        style="@style/account_line_style"
+        android:paddingTop="@dimen/space_15"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/account_personal_level_head_image"
+            android:layout_width="@dimen/space_50"
+            android:layout_height="@dimen/space_50"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            fresco:placeholderImage="@drawable/account_no_login_head_image"
+            fresco:roundAsCircle="true"/>
+
+        <TextView
+            android:id="@+id/account_personal_level_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_toRightOf="@+id/account_personal_level_head_image"
+            android:textSize="@dimen/space_15"/>
+
+        <TextView
+            android:id="@+id/account_personal_level_user_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/account_personal_level_user_name"
+            android:layout_below="@+id/account_personal_level_user_name"
+            android:layout_marginTop="@dimen/space_10"
+            android:textColor="@color/account_level_color_man"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/space_10">
+
+        <ProgressBar
+            android:id="@+id/account_personal_level_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_8"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_8"
+            android:layout_marginTop="@dimen/space_5"
+            android:background="@drawable/account_personal_level_progressbar_border"
+            android:progressDrawable="@drawable/account_personal_level_progress_border"/>
+
+        <TextView
+            android:id="@+id/account_personal_level_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_personal_level_progress"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:textColor="@color/llgray"
+            android:textSize="@dimen/space_12"/>
+
+    </RelativeLayout>
+
+    <View style="@style/account_line_style"/>
+</LinearLayout>

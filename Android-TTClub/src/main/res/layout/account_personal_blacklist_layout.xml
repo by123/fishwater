@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <!--细线-->
+    <View
+        style="@style/account_line_style"
+        android:layout_marginTop="@dimen/space_10"/>
+    <!--正常-->
+    <com.sjy.ttclub.loadmore.LoadMoreListViewContainer
+        android:id="@+id/account_blacklist_list_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg">
+
+        <ListView
+            android:id="@+id/account_blacklist_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/default_listview_seletor"
+            android:scrollbarStyle="outsideOverlay"/>
+    </com.sjy.ttclub.loadmore.LoadMoreListViewContainer>
+    <!--没网络-->
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/account_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <!--数据为0-->
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/account_relationship_no_data"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:src="@drawable/account_message_no_card_bg"-->
+    <!--android:visibility="gone"/>-->
+
+    <!--</RelativeLayout>-->
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <item name="tag_thumb_url" type="id"></item>
+    <item name="tag_order_goods_id" type="id"></item>
+
+    <item name="tag_panic_goods_title" type="id"></item>
+    <item name="tag_panic_goods_id" type="id"></item>
+</resources>

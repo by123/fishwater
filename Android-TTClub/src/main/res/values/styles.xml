@@ -1,0 +1,194 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="SlideRight2LeftAnim">
+        <item name="android:windowEnterAnimation">@anim/slide_right_left_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_right_left_out</item>
+    </style>
+
+    <style name="SlideBottom2TopAnim">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_top_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom_top_out</item>
+    </style>
+
+    <style name="TipPanelAnim">
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+    </style>
+
+    <style name="SexDataPanelAnim">
+        <item name="android:windowEnterAnimation">@anim/sex_data_panel_in</item>
+        <item name="android:windowExitAnimation">@anim/sex_data_panel_out</item>
+    </style>
+    <!-- 我的页面的横线 -->
+    <style name="account_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:layout_marginLeft">@dimen/space_15</item>
+        <item name="android:layout_marginRight">@dimen/space_15</item>
+        <item name="android:background">@color/account_view_checked_background</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- 我的页面—选项卡头部 -->
+    <style name="account_options_style">
+        <item name="android:background">@drawable/account_selector_option</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/space_10</item>
+        <item name="android:paddingBottom">@dimen/space_10</item>
+        <item name="android:paddingRight">@dimen/space_10</item>
+        <item name="android:paddingLeft">@dimen/space_15</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textSize">@dimen/space_15</item>
+        <item name="android:textColor">@color/account_gray</item>
+        <item name="android:drawablePadding">@dimen/space_12</item>
+    </style>
+
+    <!-- 我的页面—选项卡箭头样式 -->
+    <style name="account_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/account_arraw</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/space_15</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!--我的页面-输入框左边的文字样式-->
+    <style name="account_edit_left_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawablePadding">@dimen/space_15</item>
+        <item name="android:paddingBottom">@dimen/space_10</item>
+        <item name="android:paddingLeft">@dimen/space_15</item>
+        <item name="android:paddingTop">@dimen/space_10</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/splash_text_color</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/space_15</item>
+    </style>
+
+    <!--我的页面-输入框样式-->
+    <style name="account_edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawablePadding">@dimen/space_15</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/space_15</item>
+        <item name="android:paddingLeft">@dimen/space_15</item>
+        <item name="android:paddingRight">@dimen/space_15</item>
+        <item name="android:paddingTop">@dimen/space_15</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/account_gray</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textSize">@dimen/space_15</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="account_login_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/space_40</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/space_15</item>
+        <item name="android:layout_marginRight">@dimen/space_15</item>
+        <item name="android:layout_marginTop">@dimen/space_20</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/space_15</item>
+    </style>
+
+    <style name="CommonDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="RecordCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">@dimen/space_18</item>
+        <item name="android:paddingBottom">@dimen/space_18</item>
+    </style>
+
+    <!--消息选择样式-->
+    <style name="CheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/account_message_check_box_bg</item>
+    </style>
+
+    <style name="shopping_category_top_text">
+        <item name="android:background">@drawable/account_selector_option</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/space_14</item>
+        <item name="android:textColor">@color/shopping_items_other_color</item>
+    </style>
+
+    <!--评价星星样式-->
+    <style name="ratingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:isIndicator">true</item>
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+    </style>
+    <!--购买商品弹出panel Radio 文字样式-->
+    <style name="buyWindowRadioText" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/space_10</item>
+        <item name="android:textColor">@drawable/buy_panel_radio_text</item>
+        <item name="android:drawablePadding">@dimen/space_0</item>
+    </style>
+
+    <style name="order_tv_options_style">
+        <item name="android:background">@drawable/shopping_selector_option</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/space_15</item>
+        <item name="android:paddingBottom">@dimen/space_15</item>
+        <item name="android:paddingRight">@dimen/space_10</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textSize">@dimen/space_15</item>
+        <item name="android:textColor">@color/black_dark</item>
+        <item name="android:drawablePadding">@dimen/space_12</item>
+    </style>
+
+    <style name="order_iv_options_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/icon_arraw</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/space_15</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="order_common_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/space_05</item>
+        <item name="android:background">@color/shopping_common_line</item>
+    </style>
+
+    <style name="order_result_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/space_05</item>
+        <item name="android:background">@color/shopping_common_line</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/space_20</item>
+        <item name="android:layout_marginRight">@dimen/space_20</item>
+    </style>
+</resources>

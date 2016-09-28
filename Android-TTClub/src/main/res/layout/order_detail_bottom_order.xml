@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_55"
+        android:layout_marginTop="@dimen/space_15"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/space_10">
+
+        <TextView
+            android:id="@+id/tv_order_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/shopping_items_other_color" />
+
+        <TextView
+            android:id="@+id/tv_order_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_5"
+            android:textColor="@color/shopping_items_other_color" />
+
+        <LinearLayout
+            android:id="@+id/layout_overdue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/order_logistic_icon_clock" />
+
+            <com.sjy.ttclub.shopping.widget.ShoppingCountdownView
+                android:id="@+id/tv_order_overdue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_5"
+                android:textColor="@color/shopping_title" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_mybg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_201"
+    android:background="@drawable/account_head_bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/space_29">
+
+        <!--头像-->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/account_head_image"
+            android:layout_width="@dimen/space_58"
+            android:layout_height="@dimen/space_58"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            fresco:placeholderImage="@drawable/account_no_login_head_image"
+            fresco:roundAsCircle="true"/>
+
+        <LinearLayout
+            android:id="@+id/account_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_5"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <!-- 昵称-->
+            <TextView
+                android:id="@+id/account_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/space_5"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_15"/>
+
+            <!--等级-->
+            <TextView
+                android:id="@+id/account_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/account_level_man"
+                android:gravity="center"
+                android:textColor="@color/account_gray"
+                android:textSize="@dimen/space_10"/>
+        </LinearLayout>
+
+        <!--注册、登录-->
+        <TextView
+            android:id="@+id/account_no_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_8"
+            android:background="@drawable/account_no_login_bg"
+            android:gravity="center"
+            android:text="@string/account_nologin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_15"/>
+
+        <LinearLayout
+            android:id="@+id/account_sex_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_14"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/space_22"
+                android:layout_height="@dimen/space_16"
+                android:layout_gravity="center"
+                android:src="@drawable/account_symbol_sex"/>
+
+            <TextView
+                android:id="@+id/account_sex_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_5"
+                android:text="@string/account_sex_symbol"
+                android:textColor="#ff5686"
+                android:textSize="@dimen/space_14"/>
+
+            <ImageView
+                android:layout_width="@dimen/space_22"
+                android:layout_height="@dimen/space_16"
+                android:layout_gravity="center"
+                android:src="@drawable/account_sex_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--收藏-->
+    <include layout="@layout/account_main_head_foot"/>
+
+    <!--设置-->
+    <ImageView
+        android:id="@+id/account_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="@dimen/space_19"
+        android:paddingTop="@dimen/space_10"
+        android:src="@drawable/account_setting"/>
+</RelativeLayout>

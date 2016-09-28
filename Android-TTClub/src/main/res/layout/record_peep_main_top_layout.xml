@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/record_peep_main_top"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/record_peep_main_top_sex"
+        layout="@layout/record_peep_main_top_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"/>
+
+    <include
+        android:id="@+id/record_peep_main_top_marriage"
+        layout="@layout/record_peep_main_top_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"/>
+
+    <include
+        android:id="@+id/record_peep_main_top_time"
+        layout="@layout/record_peep_main_top_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_40"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_16"
+            android:text="@string/record_peep_show_me"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_14"/>
+
+        <com.sjy.ttclub.widget.CustomCheckBox
+            android:id="@+id/record_peep_main_top_show_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_16"
+            android:button="@drawable/checkbox_switch"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_light">
+
+
+    <com.sjy.ttclub.widget.WheelView
+        android:id="@+id/account_personal_attr_wheel_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <com.sjy.ttclub.widget.AlphaTextView
+        android:id="@+id/account_personal_attr_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_16"
+        android:text="@string/finish"
+        android:textColor="@color/black"
+        android:textSize="@dimen/space_18"/>
+
+
+</FrameLayout>

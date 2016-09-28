@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.lsym.ttclub"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22"/>
+
+    <!-- use "uses-feature" to avoid google play install problem -->
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <!-- 友盟sdk权限开始 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <!-- 可选 -->
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!-- 友盟sdk权限结束 -->
+
+
+    <application
+        android:name="com.sjy.ttclub.framework.AppApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.sjy.ttclub.TTClubActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|keyboardHidden|fontScale|screenSize"
+            android:icon="@drawable/app_icon"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wx683c2dc7c163644a"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 友盟sdk开始 ********************************************************** -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5568272367e58e77c50013ae"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}"/>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="e1ed1bb3bb9dab8f39e653f14ada48e7"/>
+        <!-- 友盟版本更新开始 -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService"/>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!-- 友盟版本更新结束 -->
+
+
+        <!-- 第三方登陆开始********************************************************** -->
+        <!--weibo login-->
+        <activity
+            android:name="com.lsym.ttclub.WBShareActivity"
+            android:configChanges="orientation|keyboardHidden|fontScale|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="orientation|keyboardHidden|fontScale|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <!--QQ,Qzone login-->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent1104666174"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!--alipay-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!-- 微信回调activity -->
+        <receiver android:name="com.sjy.ttclub.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!-- 第三方登陆结束********************************************************** -->
+
+
+        <!-- 友盟推送sdk开始 -->
+        <!-- Umeng的长连服务，用来建立推送的长连接的 -->
+        <!-- 监听通知点击或者忽略处理的广播 -->
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false"/>
+
+        <!-- 监听开机运行、网络连接变化、卸载的广播 -->
+        <receiver
+            android:name="com.umeng.message.SystemReceiver"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 监听消息到达的广播 -->
+        <receiver
+            android:name="com.umeng.message.MessageReceiver"
+            android:exported="false"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 监听宿主选举的广播 -->
+        <receiver
+            android:name="com.umeng.message.ElectionReceiver"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_RESULT_V4"/>
+                <category android:name="umeng"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 监听注册的广播 -->
+        <receiver
+            android:name="com.umeng.message.RegistrationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.lsym.ttclub.intent.action.COMMAND"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.UmengMessageBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.umeng.message.UmengService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="com.lsym.ttclub.intent.action.START"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.lsym.ttclub.intent.action.COCKROACH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING_V4"/>
+                <category android:name="umeng"/>
+            </intent-filter>
+        </service>
+
+        <!-- Umeng的消息接收服务 -->
+        <service
+            android:name="com.umeng.message.UmengIntentService"
+            android:process=":push"/>
+
+        <!-- Umeng的消息路由服务 -->
+        <service
+            android:name="com.umeng.message.UmengMessageIntentReceiverService"
+            android:exported="true"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.android.agoo.client.ElectionReceiverService"/>
+            </intent-filter>
+        </service>
+
+        <!-- v2.4.1添加的Service，Umeng的消息接收后的处理服务 -->
+        <service
+            android:name="com.umeng.message.UmengMessageCallbackHandlerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.umeng.messge.registercallback.action"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.unregistercallback.action"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.message.handler.action"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.autoupdate.handler.action"/>
+            </intent-filter>
+        </service>
+
+        <!-- V1.3.0添加的service，负责下载通知的资源 -->
+        <service android:name="com.umeng.message.UmengDownloadResourceService"/>
+
+        <!-- V2.5.0添加的Service，用于本地通知 -->
+        <!-- 如果不使用本地通知，可以注释掉本地通知服务的配置 -->
+        <service
+            android:name="com.umeng.message.local.UmengLocalNotificationService"
+            android:exported="false"/>
+        <!--友盟推送结束-->
+    </application>
+
+</manifest>

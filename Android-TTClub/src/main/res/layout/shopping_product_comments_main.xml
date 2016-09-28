@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View style="@style/account_line_style"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10">
+
+            <TextView
+                android:id="@+id/mix_comment_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:text="@string/shopping_product_comment_rating"
+                android:textColor="#999999"
+                android:textSize="@dimen/space_14"/>
+
+            <RatingBar
+                android:id="@+id/mix_comment_star"
+                style="@style/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:clickable="false"
+                android:numStars="5"
+                android:rating="4"
+                android:stepSize="0.25" />
+        </FrameLayout>
+
+
+        <RadioGroup
+            android:id="@+id/product_comment_sort_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_46"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_group_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/theme_background_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/product_comments_radio_text_color"
+                android:textSize="@dimen/space_12"/>
+
+            <RadioButton
+                android:id="@+id/radio_group_satisfy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/theme_background_selector"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/product_comments_radio_text_color"
+                android:textSize="@dimen/space_12"/>
+
+            <RadioButton
+                android:id="@+id/radio_group_general"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/theme_background_selector"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+
+                android:textColor="@color/product_comments_radio_text_color"
+                android:textSize="@dimen/space_12"/>
+
+            <RadioButton
+                android:id="@+id/radio_group_unsatisfiy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/theme_background_selector"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/product_comments_radio_text_color"
+                android:textSize="@dimen/space_12"/>
+
+        </RadioGroup>
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/product_comment_list_ptr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.sjy.ttclub.loadmore.LoadMoreListViewContainer
+                android:id="@+id/product_comment_list_loadmore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/product_comment_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@null"
+                    android:listSelector="@color/transparent"
+                    android:scrollbars="none"/>
+            </com.sjy.ttclub.loadmore.LoadMoreListViewContainer>
+
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+    </LinearLayout>
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/product_comments_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CartPriceValue">
+        <attr name="value" format="reference|string" />
+        <attr name="textColor" format="reference|color" />
+        <attr name="textSize" format="reference|dimension" />
+        <attr name="moneySize" format="reference|dimension" />
+        <attr name="intSize" format="reference|dimension" />
+        <attr name="decimalSize" format="reference|dimension" />
+        <attr name="strike" format="boolean" />
+        <attr name="withEndZero" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension" />
+        <attr name="rtextColor" format="color" />
+        <attr name="rtextSize" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="rdtextColor" format="color" />
+        <attr name="rdtextSize" format="dimension" />
+        <attr name="rdtext" format="string" />
+        <attr name="rIcon" format="reference" />
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <!--datetime控件-->
+
+    <declare-styleable name="day">
+        <attr name="state_current" format="boolean" />
+        <attr name="state_dym" format="boolean" />
+        <attr name="state_nothing" format="boolean" />
+        <attr name="state_today" format="boolean" />
+        <attr name="state_papa" format="boolean" />
+        <attr name="state_myself" format="boolean" />
+        <attr name="state_focus" format="boolean" />
+    </declare-styleable>
+    <attr name="calendarViewStyle" format="reference" />
+    <!--可展开textview-->
+    <declare-styleable name="ExpandTextStyle">
+        <attr name="expandTextSize" format="dimension"/>
+        <attr name="expandTextColor" format="color"/>
+        <attr name="expandMaxLine" format="integer" />
+        <attr name="expandText" format="string" />
+    </declare-styleable>
+</resources>

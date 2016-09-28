@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/account_main_back_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/account_all_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/account_selector_option">
+
+        <TextView
+            style="@style/account_options_style"
+            android:drawableLeft="@drawable/account_all_indent"
+            android:text="@string/account_all_indent"/>
+
+        <ImageView style="@style/account_arrow"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/account_line_style"
+        android:layout_marginTop="@dimen/space_15"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/account_my_speech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_selector_option">
+
+            <TextView
+                style="@style/account_options_style"
+                android:drawableLeft="@drawable/account_presentation"
+                android:text="@string/account_presentation"/>
+
+            <ImageView style="@style/account_arrow"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/account_line_style"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"/>
+
+        <RelativeLayout
+            android:id="@+id/account_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_selector_option">
+
+            <TextView
+                style="@style/account_options_style"
+                android:drawableLeft="@drawable/account_message"
+                android:text="@string/account_message"/>
+
+            <TextView
+                android:id="@+id/account_message_unread_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_40"
+                android:background="@drawable/account_message_red_point"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_10"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/account_message_same_unread"
+                android:layout_width="@dimen/space_6"
+                android:layout_height="@dimen/space_6"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_30"
+                android:src="@drawable/account_message_red_point"
+                android:visibility="gone"/>
+
+            <ImageView style="@style/account_arrow"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/account_line_style"
+        android:layout_marginTop="@dimen/space_15"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/account_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_selector_option">
+
+            <TextView
+                style="@style/account_options_style"
+                android:drawableLeft="@drawable/account_user_feedback"
+                android:text="@string/account_user_feedback"/>
+
+            <ImageView style="@style/account_arrow"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/account_line_style"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"/>
+
+        <RelativeLayout
+            android:id="@+id/account_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_selector_option">
+
+            <TextView
+                android:id="@+id/account_version_update"
+                style="@style/account_options_style"
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/account_upgrade"
+                android:text="@string/account_updating_version"/>
+
+            <TextView
+                android:id="@+id/account_upgrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/account_version_update"
+                android:background="@drawable/account_upgrade_bg"
+                android:gravity="center"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:text="New"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_10"/>
+
+            <TextView
+                android:id="@+id/account_new_version_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_15"
+                android:gravity="center"
+                android:textColor="@color/account_gray"
+                android:textSize="@dimen/space_15"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/account_line_style"
+        android:layout_marginTop="@dimen/space_15"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/account_selector_option">
+
+        <TextView
+            android:id="@+id/account_protection_privacy"
+            style="@style/account_options_style"
+            android:drawableLeft="@drawable/account_protection_privacy"
+            android:text="@string/account_protection_privacy"/>
+
+        <ImageView
+            android:id="@+id/account_switch_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/space_5"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:paddingTop="@dimen/space_5"
+            android:src="@drawable/switch_off"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/account_line_style"/>
+
+    <RelativeLayout
+        android:id="@+id/account_weibo_wechat"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/account_wechat"
+                android:drawablePadding="7dp"
+                android:gravity="left|center"
+                android:paddingRight="20dp"
+                android:text="她他社(ta2she)"
+                android:textColor="@color/account_gray"
+                android:textSize="11dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/account_weibo"
+                android:drawablePadding="7dp"
+                android:gravity="left|center"
+                android:text="她他社"
+                android:textColor="@color/account_gray"
+                android:textSize="11dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

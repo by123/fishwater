@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shopping_selector_option"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingTop="@dimen/space_10">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/ic_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_5"
+            android:textColor="@color/shopping_items_title_color" />
+    </LinearLayout>
+</FrameLayout>

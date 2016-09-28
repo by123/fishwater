@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto">
+
+    <item android:drawable="@drawable/record_day_state_focus" lib:state_focus="true" />
+    <item android:drawable="@drawable/record_day_state_no" />
+
+</selector>

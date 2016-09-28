@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/collect_article_post_foot"
+            layout="@layout/collect_article_post_bottom"/>
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/collect_article_post_prt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/collect_article_post_foot"
+            android:layout_alignParentTop="true">
+
+            <com.sjy.ttclub.loadmore.LoadMoreListViewContainer
+                android:id="@+id/collect_article_post_load_more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/collect_article_post_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@color/homepage_content_bg_color"
+                    android:dividerHeight="@dimen/divider_height"
+                    android:drawSelectorOnTop="true"
+                    android:fastScrollEnabled="false"
+                    android:listSelector="@drawable/default_listview_seletor"/>
+
+            </com.sjy.ttclub.loadmore.LoadMoreListViewContainer>
+
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/collect_nocollect"/>
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/collect_article_post_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+
+</FrameLayout>

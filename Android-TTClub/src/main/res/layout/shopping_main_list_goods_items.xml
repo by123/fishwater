@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cart="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shopping_selector_option"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_5">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/thumb_goods"
+            android:layout_width="@dimen/space_100"
+            android:layout_height="@dimen/space_100"
+            android:layout_gravity="left" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/space_5">
+
+            <TextView
+                android:id="@+id/title_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/shopping_items_title_color"
+                android:textSize="@dimen/space_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginBottom="@dimen/space_25"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <com.sjy.ttclub.widget.PriceView
+                    android:id="@+id/sale_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    cart:decimalSize="@dimen/space_12"
+                    cart:intSize="@dimen/space_18"
+                    cart:moneySize="@dimen/space_12"
+                    cart:strike="false"
+                    cart:textColor="@color/shopping_panic_light_color" />
+
+                <com.sjy.ttclub.widget.PriceView
+                    android:id="@+id/market_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_5"
+                    cart:decimalSize="@dimen/space_12"
+                    cart:intSize="@dimen/space_12"
+                    cart:moneySize="@dimen/space_12"
+                    cart:strike="true"
+                    cart:textColor="@color/shopping_items_other_color" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sale_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:textColor="@color/shopping_items_other_color"
+                android:textSize="@dimen/space_12" />
+
+            <com.sjy.ttclub.widget.AlphaTextView
+                android:id="@+id/btn_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:background="@drawable/shopping_panic_buy"
+                android:gravity="center"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:text="@string/shopping_panic_text"
+                android:textColor="@color/shopping_panic_light_color" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_05"
+        android:background="@color/shopping_common_line"></View>
+</LinearLayout>

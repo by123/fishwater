@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/space_15"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingLeft="@dimen/space_15"
+            android:paddingRight="@dimen/space_5"
+            android:paddingTop="@dimen/space_15"
+            android:singleLine="true"
+            android:text="@string/order_address_name"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/space_15" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_name"
+            android:background="@null"
+            android:drawablePadding="@dimen/space_15"
+            android:gravity="center_vertical"
+            android:maxLength="8"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingLeft="@dimen/space_5"
+            android:paddingRight="@dimen/space_30"
+            android:paddingTop="@dimen/space_15"
+            android:singleLine="true"
+            android:textColor="@color/black_dark"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/space_15" />
+
+        <com.sjy.ttclub.widget.AlphaImageView
+            android:id="@+id/iv_name_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/space_15"
+            android:src="@drawable/order_address_del_icon" />
+    </RelativeLayout>
+
+    <View style="@style/order_result_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingLeft="@dimen/space_15"
+            android:paddingRight="@dimen/space_5"
+            android:paddingTop="@dimen/space_15"
+            android:singleLine="true"
+            android:text="@string/order_address_phone"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/space_15" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_phone"
+            android:background="@null"
+            android:drawablePadding="@dimen/space_15"
+            android:gravity="center_vertical"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingLeft="@dimen/space_5"
+            android:paddingRight="@dimen/space_30"
+            android:paddingTop="@dimen/space_15"
+            android:singleLine="true"
+            android:textColor="@color/black_dark"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/space_15" />
+
+        <com.sjy.ttclub.widget.AlphaImageView
+            android:id="@+id/iv_phone_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/space_15"
+            android:src="@drawable/order_address_del_icon" />
+    </RelativeLayout>
+
+    <View style="@style/order_result_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_area_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawablePadding="@dimen/space_15"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingLeft="@dimen/space_15"
+            android:paddingRight="@dimen/space_5"
+            android:paddingTop="@dimen/space_15"
+            android:singleLine="true"
+            android:text="@string/order_address_area"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/space_15" />
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_area_title"
+            android:background="@drawable/account_selector_option"
+            android:drawablePadding="@dimen/space_15"
+            android:gravity="center_vertical"
+            android:hint="@string/order_address_select"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingLeft="@dimen/space_5"
+            android:paddingRight="@dimen/space_30"
+            android:paddingTop="@dimen/space_15"
+            android:textColor="@color/black_dark"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/space_15" />
+    </RelativeLayout>
+
+    <View style="@style/order_result_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawablePadding="@dimen/space_15"
+            android:gravity="center_vertical"
+            android:maxLength="11"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingLeft="@dimen/space_15"
+            android:paddingRight="@dimen/space_5"
+            android:paddingTop="@dimen/space_15"
+            android:singleLine="true"
+            android:text="@string/order_address_address"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/space_15" />
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_address"
+            android:background="@null"
+            android:drawablePadding="@dimen/space_15"
+            android:gravity="center_vertical"
+            android:maxLines="4"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingLeft="@dimen/space_5"
+            android:paddingRight="@dimen/space_30"
+            android:paddingTop="@dimen/space_15"
+            android:singleLine="true"
+            android:textColor="@color/black_dark"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/space_15" />
+    </RelativeLayout>
+</LinearLayout>

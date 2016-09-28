@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/end_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginBottom="@dimen/space_24"
+        android:layout_marginLeft="@dimen/space_80"
+        android:layout_marginRight="@dimen/space_80"
+        android:layout_marginTop="@dimen/space_24"
+        android:background="@color/community_gray_line" />
+
+    <TextView
+        android:id="@+id/end_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="END"
+        android:textColor="@color/community_llgray"
+        android:textSize="@dimen/space_15"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/praise_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:src="@drawable/community_post_praise" />
+
+    <TextView
+        android:id="@+id/btn_praise_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/community_llgray"
+        android:textSize="@dimen/space_15" />
+</LinearLayout>

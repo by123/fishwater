@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_8"
+        android:background="#f4f4f4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_8"
+        android:background="@drawable/homepage_item_coner_bg"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/little_image_text_two_image"
+            android:layout_width="@dimen/space_221"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_22"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:roundAsCircle="false" />
+
+        <TextView
+            android:id="@+id/little_image_text_two_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_21"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="#202020"
+            android:textSize="@dimen/space_16" />
+
+        <View
+            android:layout_width="@dimen/space_32"
+            android:layout_height="@dimen/space_3"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_16"
+            android:background="#222222" />
+
+        <LinearLayout
+            android:id="@+id/little_image_text_two_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_17"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/little_image_text_two_user_image"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:scaleType="centerCrop"
+                fresco:roundAsCircle="false" />
+
+            <TextView
+                android:id="@+id/little_image_text_two_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_4"
+                android:textColor="#202020"
+                android:textSize="@dimen/space_11" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/little_image_text_two_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_70"
+            android:layout_marginRight="@dimen/space_70"
+            android:layout_marginTop="@dimen/space_20"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/space_5"
+            android:maxLines="3"
+            android:textColor="#808080"
+            android:textSize="@dimen/space_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_18"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/space_0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/little_image_text_two_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:drawableLeft="@drawable/homepage_item_praise_selector"
+                    android:drawablePadding="@dimen/space_5"
+                    android:padding="@dimen/space_10"
+                    android:text="22"
+                    android:textColor="#BFBFBF"
+                    android:textSize="@dimen/space_11" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/little_image_text_two_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/homepage_article_icon_btn"
+                android:gravity="center"
+                android:text="阅读更多"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_little_image_text_two_comment"
+                android:layout_width="@dimen/space_0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/little_image_text_two_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space_15"
+                    android:drawableLeft="@drawable/homepage_icon_comment"
+                    android:drawablePadding="@dimen/space_5"
+                    android:padding="@dimen/space_10"
+                    android:text="2"
+                    android:textColor="#BFBFBF"
+                    android:textSize="@dimen/space_11" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

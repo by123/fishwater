@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/account_main_back_color"
+              android:orientation="vertical">
+
+    <View
+        style="@style/account_line_style"
+        android:layout_marginTop="@dimen/space_15"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_login_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/account_signup_verification_phone"
+                android:textColor="@color/account_setting_gray"
+                android:textSize="@dimen/space_14"/>
+
+            <TextView
+                android:id="@+id/verification_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_login_password"
+                android:gravity="center"
+                android:textColor="@color/account_gray"
+                android:textSize="@dimen/space_15"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:text="@string/account_signup_verification_explain"
+            android:textColor="@color/account_setting_gray"
+            android:textSize="@dimen/space_13"/>
+
+        <View style="@style/account_line_style"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/verification_code"
+                style="@style/account_edit"
+                android:layout_weight="1"
+                android:hint="@string/account_retrieve_password_code_hint"
+                android:inputType="number"
+                android:maxLength="4"
+                android:paddingLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/verification_obtain_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/account_selector_clickable_bg"
+                android:gravity="center"
+                android:padding="@dimen/space_5"
+                android:text="@string/account_signup_verification_get_code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_13"/>
+
+        </LinearLayout>
+
+        <View style="@style/account_line_style"/>
+
+        <Button
+            android:id="@+id/verification_sure"
+            style="@style/account_login_button"
+            android:background="@drawable/account_not_click"
+            android:text="@string/account_sure"/>
+    </LinearLayout>
+</LinearLayout>

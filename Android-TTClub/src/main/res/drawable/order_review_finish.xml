@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="@dimen/space_0" />
+
+    <padding
+        android:bottom="@dimen/space_5"
+        android:left="@dimen/space_15"
+        android:right="@dimen/space_15"
+        android:top="@dimen/space_5" />
+
+    <solid android:color="@color/order_review_btn_finish" />
+
+    <stroke
+        android:width="0.1dp"
+        android:color="@color/order_review_btn_finish" />
+
+</shape>

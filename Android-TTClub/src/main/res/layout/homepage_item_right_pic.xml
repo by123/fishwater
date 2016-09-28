@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_8"
+        android:background="#f4f4f4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_8"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/homepage_item_right_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="233dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/right_pic_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_21"
+                    android:layout_marginRight="@dimen/space_36"
+                    android:layout_marginTop="@dimen/space_22"
+                    android:lineSpacingExtra="@dimen/space_5"
+                    android:maxLines="2"
+                    android:text="大苏打撒大苏打撒旦撒"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/space_16" />
+
+                <TextView
+                    android:id="@+id/right_pic_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_60"
+                    android:layout_marginLeft="@dimen/space_21"
+                    android:layout_marginRight="@dimen/space_34"
+                    android:layout_marginTop="@dimen/space_14"
+                    android:lineSpacingExtra="@dimen/space_5"
+                    android:maxLines="3"
+                    android:text="适当放松放松放松的方式的发生大幅度"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/space_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_21"
+                    android:layout_marginTop="@dimen/space_13"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/right_pic_like"
+                        android:layout_width="@dimen/space_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/homepage_item_praise_selector"
+                        android:drawablePadding="@dimen/space_5"
+                        android:paddingBottom="@dimen/space_10"
+                        android:paddingRight="@dimen/space_10"
+                        android:paddingTop="@dimen/space_10"
+                        android:text="22"
+                        android:textColor="#BFBFBF"
+                        android:textSize="@dimen/space_11"
+
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="@dimen/space_0"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/right_pic_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/space_10"
+                            android:drawableLeft="@drawable/homepage_icon_comment"
+                            android:drawablePadding="@dimen/space_5"
+                            android:padding="@dimen/space_10"
+                            android:text="234"
+                            android:textColor="#BFBFBF"
+                            android:textSize="@dimen/space_11" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/right_pic_user_info_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/right_pic_image"
+                android:layout_width="@dimen/space_78"
+                android:layout_height="@dimen/space_78"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space_15"
+                android:scaleType="centerCrop"
+                fresco:roundAsCircle="true"
+                fresco:roundingBorderColor="#FFFFFF"
+                fresco:roundingBorderWidth="5dp" />
+
+            <TextView
+                android:id="@+id/right_pic_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_33"
+                android:layout_marginTop="@dimen/space_14"
+                android:text="阿斯达大苏"
+                android:textColor="#202020"
+                android:textSize="@dimen/space_11" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

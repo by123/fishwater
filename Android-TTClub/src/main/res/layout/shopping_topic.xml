@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shopping_bg">
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/shopping_topic_list_ptr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/shopping_topic_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/shopping_topic_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

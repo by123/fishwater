@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/record_self_count_ll"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_199"
+    android:background="@color/record_list_items_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/record_self_count1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="啪啪共计"
+                android:textColor="@color/record_self_text_count1"
+                android:textSize="@dimen/space_18"/>
+
+            <TextView
+                android:id="@+id/record_self_count2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/record_self_text_count2"
+                android:textSize="@dimen/space_44"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="次"
+                android:textColor="@color/record_self_text_count1"
+                android:textSize="@dimen/space_18"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_26"
+            android:layout_marginRight="@dimen/space_26">
+
+            <LinearLayout
+                android:layout_width="@dimen/space_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/record_self_times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:text="0次"
+                    android:textColor="@color/shopping_items_title_color"
+                    android:textSize="@dimen/space_16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_15"
+                    android:text="最近30天"
+                    android:textColor="@color/shopping_items_title_color"
+                    android:textSize="@dimen/space_12"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/space_1"
+                android:layout_height="@dimen/space_30"
+                android:layout_gravity="center_vertical"
+                android:background="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="@dimen/space_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/record_self_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:text="0天"
+                    android:textColor="@color/shopping_items_title_color"
+                    android:textSize="@dimen/space_16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_15"
+                    android:text="距离上次"
+                    android:textColor="@color/shopping_items_title_color"
+                    android:textSize="@dimen/space_12"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/record_self_line"
+                android:layout_width="@dimen/space_1"
+                android:layout_height="@dimen/space_30"
+                android:layout_gravity="center_vertical"
+                android:background="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/record_self_avg_time_ll"
+                android:layout_width="@dimen/space_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/record_self_avg_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:text="0分钟"
+                    android:textColor="@color/shopping_items_title_color"
+                    android:textSize="@dimen/space_16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_15"
+                    android:text="平均时间"
+                    android:textColor="@color/shopping_items_title_color"
+                    android:textSize="@dimen/space_12"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0"
+        android:layout_weight="1">
+
+        <include
+            layout="@layout/share_bottom_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/record_self_count_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/space_11"
+            android:layout_marginRight="@dimen/space_24">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/space_8"
+                android:text="@string/record_data_share"
+                android:textColor="@color/shopping_items_title_color"
+                android:textSize="@dimen/space_13"/>
+
+            <com.sjy.ttclub.widget.AlphaImageView
+                android:layout_width="@dimen/space_21"
+                android:layout_height="@dimen/space_20"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/record_share"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

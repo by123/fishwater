@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/lLayout_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_evolution_rule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/community_comment_rule_bg">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:text="评论须知"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="1.文明交友互相尊重，严禁人身攻击的文字和侮辱性“三字经”。"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="2.不欢迎无意义无内容的数字、字母、符号恶意刷楼。"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="3.严禁发布淫秽、色情信息和各类小广告，同行请绕行。"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="4.文爱、一夜情、炮友、约吗、性伴侣等敏感字眼，一律“哔哔”屏蔽。"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="5.严禁留一切联系方式：手机号、QQ、陌陌、微信、摩斯密码..."
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12"/>
+
+            <TextView
+                android:id="@+id/btn_known"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_read_rule"
+                android:layout_alignBottom="@+id/btn_read_rule"
+                android:layout_alignRight="@+id/textView6"
+                android:background="@drawable/community_comment_rule_read_btn"
+                android:gravity="center"
+                android:text="我知道了"
+                android:textColor="@color/community_yellow"
+                android:textSize="@dimen/space_18"/>
+
+            <TextView
+                android:id="@+id/btn_read_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView6"
+                android:layout_below="@+id/textView6"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/community_comment_rule_read_btn"
+                android:gravity="center"
+                android:text="阅读版规"
+                android:textColor="@color/community_yellow"
+                android:textSize="@dimen/space_18"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

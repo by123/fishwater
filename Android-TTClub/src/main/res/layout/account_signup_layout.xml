@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/account_login_register" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_40"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/account_signup_nickname"
+                style="@style/account_edit"
+                android:hint="@string/account_signup_nickname"
+                android:maxLength="8"
+                android:textColorHint="@color/account_third_paltform_login_gray" />
+
+            <com.sjy.ttclub.widget.AlphaImageView
+                android:id="@+id/account_signup_nickname_clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/space_15"
+                android:src="@drawable/account_login_edit_clear_button"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            style="@style/account_line_style"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/account_signup_phone"
+                style="@style/account_edit"
+                android:hint="@string/account_login_input_phone_hint"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColorHint="@color/account_third_paltform_login_gray" />
+
+            <com.sjy.ttclub.widget.AlphaImageView
+                android:id="@+id/account_signup_phone_clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/space_15"
+                android:src="@drawable/account_login_edit_clear_button"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            style="@style/account_line_style"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/account_signup_password"
+                style="@style/account_edit"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="@string/account_login_check_password"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:textColorHint="@color/account_third_paltform_login_gray" />
+
+            <com.sjy.ttclub.widget.AlphaImageView
+                android:id="@+id/account_signup_password_clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/space_15"
+                android:src="@drawable/account_login_edit_clear_button"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/account_line_style" />
+
+        <com.sjy.ttclub.widget.AlphaTextView
+            android:id="@+id/sig_up"
+            style="@style/account_login_button"
+            android:background="@drawable/account_login_normal"
+            android:text="@string/account_login_registration" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/account_login_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/space_15"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingTop="@dimen/space_15"
+                android:text="@string/account_login_registration"
+                android:textColor="@color/account_selector_text_red"
+                android:textSize="@dimen/space_13" />
+
+            <TextView
+                android:id="@+id/account_login_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_15"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingTop="@dimen/space_15"
+                android:text="@string/account_login_forget_password"
+                android:textColor="@color/account_selector_text_red"
+                android:textSize="@dimen/space_13" />
+        </RelativeLayout>
+
+        <com.sjy.ttclub.widget.AlphaTextView
+            android:id="@+id/account_login_button_in_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_15"
+            android:gravity="center"
+            android:padding="@dimen/space_15"
+            android:text="@string/account_login_ta2ta"
+            android:textColor="@color/share_platform_text_color"
+            android:textSize="@dimen/space_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/divider_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_weight="1"
+                android:background="@color/account_view_checked_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/space_10"
+                android:text="@string/account_login_third_party_register"
+                android:textColor="@color/account_third_paltform_login_gray"
+                android:textSize="@dimen/space_13" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/divider_height"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/space_15"
+                android:layout_weight="1"
+                android:background="@color/account_view_checked_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.sjy.ttclub.widget.AlphaImageView
+                android:id="@+id/account_register_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/space_10"
+                android:src="@drawable/account_login_qq" />
+
+            <com.sjy.ttclub.widget.AlphaImageView
+                android:id="@+id/account_register_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/space_10"
+                android:src="@drawable/account_login_wechat" />
+
+            <com.sjy.ttclub.widget.AlphaImageView
+                android:id="@+id/account_register_weibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/space_10"
+                android:src="@drawable/account_login_sina" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

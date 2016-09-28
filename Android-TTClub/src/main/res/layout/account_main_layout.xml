@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/account_main_back_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--头像等-->
+            <include layout="@layout/account_main_head" />
+
+            <LinearLayout
+                android:id="@+id/ll_my_loadorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <!--订单详情-->
+                <RelativeLayout
+                    android:id="@+id/rl_my_loadorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/space_15"
+                    android:paddingLeft="@dimen/space_15"
+                    android:paddingRight="@dimen/space_15"
+                    android:paddingTop="@dimen/space_15">
+
+                    <TextView
+                        android:id="@+id/tv_my_loadorder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/account_gray"
+                        android:textSize="@dimen/space_13" />
+
+                    <ImageView
+                        android:id="@+id/iv_my_loadorder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/account_indent_up" />
+                </RelativeLayout>
+
+                <View style="@style/account_line_style"/>
+
+                <com.sjy.ttclub.account.widget.ListViewForScrollView
+                    android:id="@+id/lv_my_loadorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_marginRight="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:background="@color/white"
+                    android:divider="@color/account_press"
+                    android:dividerHeight="0.1dp"/>
+
+                <View style="@style/account_line_style"/>
+            </LinearLayout>
+            <!--列表-->
+            <include layout="@layout/account_main_item" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

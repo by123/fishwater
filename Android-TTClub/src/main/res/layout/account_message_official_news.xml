@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_10"
+        android:background="@drawable/account_selector_option">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_toRightOf="@+id/head_img"
+            android:ellipsize="end"
+            android:maxLength="10"
+            android:maxWidth="@dimen/space_140"
+            android:singleLine="true"
+            android:text="官方消息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_16"/>
+
+        <TextView
+            android:id="@+id/last_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_name"
+            android:layout_below="@+id/user_name"
+            android:layout_marginRight="@dimen/space_35"
+            android:layout_marginTop="@dimen/space_5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/llgray"
+            android:textSize="@dimen/space_12"/>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/head_img"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:layout_marginBottom="@dimen/space_5"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_5"
+            fresco:roundAsCircle="true"/>
+
+        <TextView
+            android:id="@+id/last_post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_5"
+            android:gravity="center"
+            android:textColor="@color/llgray"
+            android:textSize="@dimen/space_12"/>
+
+        <ImageView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/user_name"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_marginTop="@dimen/space_3"
+            android:layout_toRightOf="@+id/user_name"
+            android:background="@drawable/account_message_official_flag"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/same_msg"
+            android:layout_width="@dimen/space_26"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/last_post_time"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_5"
+            android:background="@drawable/account_message_red_point"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_10"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

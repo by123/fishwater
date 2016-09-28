@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shopping_category_panel"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_0"
+    android:layout_marginTop="@dimen/space_52"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/shopping_filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/shopping_category_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"></ListView>
+
+        <View
+            android:layout_width="@dimen/divider_width"
+            android:layout_height="match_parent"
+            android:background="@color/shopping_common_line" />
+
+        <ListView
+            android:id="@+id/shopping_category_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:listSelector="@color/transparent"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shopping_multiple_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/shopping_multiple_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:listSelector="@color/transparent"></ListView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_light"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/bg_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/no_network"
+        android:textColor="@color/llgray" />
+
+    <com.sjy.ttclub.widget.AlphaTextView
+        android:id="@+id/btn_load_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bg_sign"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_view_border_deep"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/reload"
+        android:textColor="@color/white"
+        android:textSize="@dimen/space_16"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/bg_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bg_sign"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="@dimen/space_40"
+        android:layout_height="@dimen/space_33"
+        android:layout_above="@+id/bg_sign"
+        android:layout_centerHorizontal="true"
+        android:indeterminateDrawable="@anim/loading" />
+</RelativeLayout>
+

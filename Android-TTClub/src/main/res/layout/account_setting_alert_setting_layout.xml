@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/account_setting_background"
+    android:orientation="vertical">
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/setting_alert_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <View
+        style="@style/account_line_style"
+        android:layout_marginTop="@dimen/space_10"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/account_selector_option">
+
+        <TextView
+            android:id="@+id/account_setting_alert_setting_message"
+            style="@style/account_options_style"
+            android:text="@string/account_alert_setting_message"/>
+
+        <ImageView
+            android:id="@+id/alert_setting_message_switch_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/space_5"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:paddingTop="@dimen/space_5"
+            android:src="@drawable/switch_off"/>
+
+    </RelativeLayout>
+
+
+    <View
+        style="@style/account_line_style"
+        android:layout_marginTop="@dimen/space_10"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/account_selector_option">
+
+        <TextView
+            android:id="@+id/account_setting_service_setting_card"
+            style="@style/account_options_style"
+            android:text="@string/account_alert_setting_card"/>
+
+        <ImageView
+            android:id="@+id/alert_setting_card_switch_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/space_5"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:paddingTop="@dimen/space_5"
+            android:src="@drawable/switch_off"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

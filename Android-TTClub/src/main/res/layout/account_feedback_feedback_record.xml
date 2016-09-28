@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/gray_bg"
+              android:orientation="vertical">
+
+    <View
+        style="@style/account_line_style"
+        android:layout_marginTop="@dimen/space_10"/>
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/account_feedback_record_ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.sjy.ttclub.loadmore.LoadMoreListViewContainer
+            android:id="@+id/account_feedback_record_loadmore_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/account_feedback_record_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="true"
+                android:fadingEdge="none"
+                android:cacheColorHint="@color/transparent"
+                android:listSelector="@drawable/default_listview_seletor"
+                android:scrollbarStyle="outsideOverlay"/>
+        </com.sjy.ttclub.loadmore.LoadMoreListViewContainer>
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+</LinearLayout>

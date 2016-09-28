@@ -1,0 +1,83 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/homepage_detail_toplayout_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <View
+        android:id="@+id/homepage_detail_toplayout_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homepage_test_content_mask"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/homepage_detail_toplayout_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/space_56"
+        android:layout_marginRight="@dimen/space_56"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/homepage_detail_toplayout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:maxLines="2"
+            android:text="中国版-lady gaga"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_35"/>
+
+        <TextView
+            android:id="@+id/homepage_detail_toplayout_photo_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_18"
+            android:drawableLeft="@drawable/homepage_detail_pic_num_icon"
+            android:drawablePadding="@dimen/space_16"
+            android:text="10 photos"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_16"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_80"
+            android:orientation="horizontal">
+
+            <com.sjy.ttclub.widget.AlphaTextView
+                android:id="@+id/homepage_detail_toplayout_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/space_10"
+                android:drawableTop="@drawable/homepage_detail_zan"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_20"/>
+
+            <com.sjy.ttclub.widget.AlphaTextView
+                android:id="@+id/homepage_detail_toplayout_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_80"
+                android:drawablePadding="@dimen/space_10"
+                android:drawableTop="@drawable/homepage_detail_share"
+                android:gravity="center_horizontal"
+                android:text="@string/share_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_20"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

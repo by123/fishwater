@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <View
+        style="@style/account_line_style"
+        android:layout_marginTop="@dimen/space_10"/>
+
+    <include layout="@layout/account_message_chat_ta_she_secretary_good"/>
+
+    <View style="@style/account_line_style"/>
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/account_message_chat_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0"
+        android:layout_weight="1"
+        android:background="@color/gray_bg"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/account_message_chat_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarStyle="outsideOverlay"/>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/account_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <View style="@style/account_line_style"/>
+
+    <com.sjy.ttclub.emoji.EmotionKeyBoard
+        android:id="@+id/emoji_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

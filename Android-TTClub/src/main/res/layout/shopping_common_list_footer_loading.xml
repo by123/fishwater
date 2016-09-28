@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shopping_bg"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ProgressBar
+        android:id="@+id/loading_progress"
+        android:layout_width="@dimen/space_18"
+        android:layout_height="@dimen/space_18"
+        android:layout_marginRight="@dimen/space_4"
+        android:indeterminateDrawable="@drawable/shopping_topic_footer_loading_progress" />
+
+    <TextView
+        android:id="@+id/loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_4"
+        android:text="@string/shopping_topic_list_footer_loading"
+        android:textColor="@color/shopping_items_other_color"
+        android:textSize="@dimen/space_12" />
+</LinearLayout>

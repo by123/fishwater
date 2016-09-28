@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cart="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/pull_refresh_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.sjy.ttclub.widget.ImageCycleView
+                    android:id="@+id/imageCycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/product_detail_title_context"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:paddingLeft="@dimen/space_10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_16" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_45"
+                    android:orientation="horizontal">
+
+                    <com.sjy.ttclub.widget.PriceView
+                        android:id="@+id/product_detail_discount_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_12"
+                        cart:decimalSize="@dimen/space_14"
+                        cart:intSize="@dimen/space_20"
+                        cart:moneySize="@dimen/space_14"
+                        cart:strike="false"
+                        cart:textColor="@color/shopping_panic_light_color" />
+
+                    <com.sjy.ttclub.widget.PriceView
+                        android:id="@+id/product_detail_original_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:layout_toRightOf="@+id/product_detail_discount_price"
+                        cart:decimalSize="@dimen/space_14"
+                        cart:intSize="@dimen/space_14"
+                        cart:moneySize="@dimen/space_14"
+                        cart:strike="true"
+                        cart:textColor="@color/shopping_items_other_color" />
+
+                    <TextView
+                        android:id="@+id/product_detail_buyer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/product_detail_discount_price"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:drawableLeft="@drawable/icon_peopl"
+                        android:drawablePadding="@dimen/space_2"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/space_12" />
+                </RelativeLayout>
+
+                <View style="@style/account_line_style" />
+
+                <TextView
+                    android:id="@+id/product_detail_welfare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:drawableLeft="@drawable/shopping_baoyou"
+                    android:drawablePadding="@dimen/space_10"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/space_12" />
+
+                <LinearLayout
+                    android:id="@+id/product_detail_limit_buy_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/product_detail_icon_welfare"
+                        android:drawablePadding="10dp"
+                        android:text="将在"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/space_12" />
+
+                    <com.sjy.ttclub.shopping.widget.ShoppingCountdownView
+                        android:id="@+id/product_detail_countdown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/space_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shopping_topic_surplus"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/space_12" />
+
+                </LinearLayout>
+
+                <View style="@style/account_line_style" />
+
+                <TextView
+                    android:id="@+id/product_detail_spec_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/account_selector_option"
+                    android:drawableRight="@drawable/icon_arraw"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:text="@string/shopping_product_buy_spec_title"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_16" />
+
+                <View style="@style/account_line_style" />
+
+                <LinearLayout
+                    android:id="@+id/product_detail_comments_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/account_selector_option"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/product_detail_comments_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:padding="@dimen/space_10"
+                        android:text="@string/shopping_product_comment_info"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_16" />
+
+                    <include layout="@layout/shopping_product_detail_comment_item" />
+
+                    <TextView
+                        android:id="@+id/product_detail_comments_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/space_10"
+                        android:text="@string/shopping_product_more_comments"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_16" />
+                </LinearLayout>
+
+
+                <View style="@style/account_line_style" />
+
+                <View
+                    style="@style/account_line_style"
+                    android:layout_marginTop="@dimen/space_10" />
+
+                <TextView
+                    android:id="@+id/product_detail_image_text_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/space_10"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingTop="@dimen/space_10"
+                    android:text="@string/shopping_product_buy_panel_image_text_detail_title"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_16" />
+
+                <WebView
+                    android:id="@+id/product_detail_webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_btn_spxq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="#e5e5e5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/product_detail_secretary"
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/account_selector_option"
+                    android:clickable="true"
+                    android:drawablePadding="@dimen/space_2"
+                    android:drawableTop="@drawable/shopping_secretary"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/space_5"
+                    android:text="@string/shopping_product_bottom_secretary"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/product_detail_collect"
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/account_selector_option"
+                    android:clickable="true"
+                    android:drawablePadding="@dimen/space_2"
+                    android:drawableTop="@drawable/product_detail_icon_collect"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/space_5"
+                    android:text="@string/shopping_product_bottom_collect"
+                    android:textColor="@color/shopping_collect_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/product_detail_add_buy_car"
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/account_selector_option"
+                    android:clickable="true"
+                    android:drawablePadding="@dimen/space_2"
+                    android:drawableTop="@drawable/shopping_cart"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/space_5"
+                    android:text="@string/shopping_product_add_shopping_cart"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/product_detail_buy"
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/buy_panel_buy_text"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/shopping_product_buy_now"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</FrameLayout>

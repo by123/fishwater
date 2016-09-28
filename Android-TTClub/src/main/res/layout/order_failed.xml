@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_15"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_15"
+        android:drawableLeft="@drawable/order_form_icon_failed"
+        android:drawablePadding="@dimen/space_10"
+        android:gravity="center"
+        android:text="@string/order_failed_tips1"
+        android:textColor="@color/order_failed_tips"
+        android:textSize="@dimen/space_19" />
+
+    <View style="@style/order_result_line" />
+
+    <TextView
+        android:id="@+id/order_failed_send_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_15"
+        android:drawableLeft="@drawable/order_form_dot"
+        android:drawablePadding="@dimen/space_20"
+        android:gravity="center"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/space_15" />
+
+    <TextView
+        android:id="@+id/order_failed_arrive_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_10"
+        android:drawableLeft="@drawable/order_form_dot"
+        android:drawablePadding="@dimen/space_20"
+        android:text="@string/order_failed_tips2"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/space_15" />
+
+    <TextView
+        android:id="@+id/order_failed_communicate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_15"
+        android:layout_marginLeft="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_10"
+        android:drawableLeft="@drawable/order_form_dot"
+        android:drawablePadding="@dimen/space_20"
+        android:gravity="center"
+        android:text="@string/order_failed_tips3"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/space_15" />
+
+    <View style="@style/order_result_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/order_pay_pos_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/order_detail"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"
+            android:background="@drawable/order_red_selector"
+            android:text="@string/order_pay_pos_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_15" />
+
+        <Button
+            android:id="@+id/order_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/space_15"
+            android:background="@drawable/order_gray_selector"
+            android:text="@string/order_detail"
+            android:textColor="@color/black_dark"
+            android:textSize="@dimen/space_15" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="@color/guide_merried_state_select_color"/>
+    <item android:state_selected="true" android:color="@color/guide_merried_state_select_color"/>
+    <item android:state_focused="true" android:color="@color/guide_merried_state_select_color"/>
+    <item android:color="@color/guide_user_sex_text_color"/>
+ </selector>

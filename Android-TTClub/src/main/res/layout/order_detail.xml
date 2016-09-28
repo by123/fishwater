@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shopping_bg">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/order_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:layout_gravity="bottom">
+
+        <com.sjy.ttclub.widget.AlphaTextView
+            android:id="@+id/order_btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/order_detail_delete_bg"
+            android:gravity="center"
+            android:text="@string/order_btn_cancel"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <com.sjy.ttclub.widget.AlphaTextView
+            android:id="@+id/order_btn_pay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/shopping_title"
+            android:gravity="center"
+            android:text="@string/order_btn_pay"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <com.sjy.ttclub.widget.AlphaTextView
+            android:id="@+id/order_btn_get"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/shopping_title"
+            android:gravity="center"
+            android:text="@string/order_btn_get"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <com.sjy.ttclub.widget.AlphaTextView
+            android:id="@+id/order_btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/shopping_title"
+            android:gravity="center"
+            android:text="@string/order_btn_delete"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <com.sjy.ttclub.widget.AlphaTextView
+            android:id="@+id/order_btn_review"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/shopping_title"
+            android:gravity="center"
+            android:text="@string/order_btn_review"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/order_detail_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

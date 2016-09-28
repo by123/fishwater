@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_btn_emoji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/emoji_divider_color"/>
+
+        <ImageView
+            android:id="@+id/btn_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:src="@drawable/btn_writing"
+            />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_spit1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_below="@+id/rl_btn_emoji"
+        android:background="@color/emoji_divider_color"/>
+
+    <com.sjy.ttclub.emoji.EmoticonsPageView
+        android:id="@+id/view_epv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_eiv"
+        android:layout_below="@+id/view_spit1"
+        android:orientation="vertical"/>
+
+    <com.sjy.ttclub.emoji.EmoticonsIndicatorView
+        android:id="@+id/view_eiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_spit2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/emoji_indicator_margin">
+    </com.sjy.ttclub.emoji.EmoticonsIndicatorView>
+
+    <View
+        android:id="@+id/view_spit2"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_above="@+id/view_etv"
+        android:background="@color/emoji_divider_spilt_line_color"/>
+
+    <com.sjy.ttclub.emoji.EmoticonsToolBarView
+        android:id="@+id/view_etv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/emoji_bar_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="visible"/>
+</RelativeLayout>

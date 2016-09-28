@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <com.sjy.ttclub.widget.FixedViewPager
+        android:id="@+id/image_preview_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.sjy.ttclub.widget.AlphaImageView
+        android:id="@+id/image_preview_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:padding="10dp"
+        android:src="@drawable/back_icon_width_bg"/>
+
+    <TextView
+        android:id="@+id/image_preview_page_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/space_10"
+        android:text="1/1"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/space_19"/>
+
+</FrameLayout>

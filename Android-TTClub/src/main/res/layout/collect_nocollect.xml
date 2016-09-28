@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/collect_nocollect"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/collect_nocollect_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/collect_nocollect"/>
+
+        <TextView
+            android:id="@+id/collect_nocollect_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_10"
+            android:text="@string/collect_no_article"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/space_13"/>
+    </LinearLayout>
+
+
+</FrameLayout>

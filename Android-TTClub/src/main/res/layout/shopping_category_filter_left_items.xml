@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/space_15"
+        android:paddingTop="@dimen/space_15"
+        android:textColor="@color/shopping_category_filter_list_text_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_05"
+        android:background="@color/shopping_common_line"></View>
+</LinearLayout>

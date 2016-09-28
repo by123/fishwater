@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_264"
+    android:background="@color/record_list_items_bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_264"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/space_15"
+        android:src="@drawable/record_where_papa_point"/>
+
+    <RelativeLayout
+        android:layout_width="@dimen/space_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/record_circle_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/record_where_papa_circle_red"/>
+
+        <View
+            android:id="@+id/record_line_red"
+            android:layout_width="@dimen/space_1"
+            android:layout_height="@dimen/space_16"
+            android:layout_above="@id/record_circle_red"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_2"
+            android:background="@color/shopping_items_title_color"/>
+
+        <ImageView
+            android:id="@+id/record_where_papa_home_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/record_line_red"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_3"
+            android:src="@drawable/record_where_papa_home"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/record_where_papa_home_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_11"
+            android:text="@string/record_self_where_papa_home"
+            android:textColor="@color/shopping_items_title_color"
+            android:textSize="@dimen/space_13"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_3"
+            android:layout_toLeftOf="@id/record_circle_red"
+            android:background="@color/shopping_items_title_color"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_3"
+            android:layout_toRightOf="@id/record_circle_red"
+            android:background="@color/shopping_items_title_color"/>
+
+        <TextView
+            android:id="@+id/record_where_papa_home_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/record_circle_red"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_8"
+            android:text="0%"
+            android:textColor="@color/record_where_color2"
+            android:textSize="@dimen/space_13"/>
+
+        <View
+            android:id="@+id/record_where_papa_home_line"
+            android:layout_width="@dimen/space_23"
+            android:layout_height="@dimen/space_1"
+            android:layout_below="@id/record_where_papa_home_other"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_4"
+            android:layout_marginTop="@dimen/space_4"
+            android:background="@color/shopping_items_title_color"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/record_where_papa_home_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/record_where_papa_home_line"
+            android:layout_centerHorizontal="true"
+            android:text="0%"
+            android:textColor="@color/record_peep_chart_self"
+            android:textSize="@dimen/space_13"
+            android:visibility="invisible"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/space_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/record_circle_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/record_where_papa_circle_blue"/>
+
+        <View
+            android:id="@+id/record_line_blue"
+            android:layout_width="@dimen/space_1"
+            android:layout_height="@dimen/space_16"
+            android:layout_below="@id/record_circle_blue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_2"
+            android:background="@color/shopping_items_title_color"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_3"
+            android:layout_toLeftOf="@id/record_circle_blue"
+            android:background="@color/shopping_items_title_color"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_3"
+            android:layout_toRightOf="@id/record_circle_blue"
+            android:background="@color/shopping_items_title_color"/>
+
+        <TextView
+            android:id="@+id/record_where_papa_hotel_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/record_circle_blue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_8"
+            android:text="0%"
+            android:textColor="@color/record_where_color3"
+            android:textSize="@dimen/space_13"/>
+
+        <View
+            android:id="@+id/record_where_papa_hotel_line"
+            android:layout_width="@dimen/space_23"
+            android:layout_height="@dimen/space_1"
+            android:layout_above="@id/record_where_papa_hotel_other"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_4"
+            android:layout_marginTop="@dimen/space_4"
+            android:background="@color/shopping_items_title_color"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/record_where_papa_hotel_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/record_where_papa_hotel_line"
+            android:layout_centerHorizontal="true"
+            android:text="0%"
+            android:textColor="@color/record_peep_chart_self"
+            android:textSize="@dimen/space_13"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/record_where_papa_hotel_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/record_line_blue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_3"
+            android:src="@drawable/record_where_papa_hotel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/record_where_papa_hotel_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_11"
+            android:text="@string/record_self_where_papa_hotel"
+            android:textColor="@color/shopping_items_title_color"
+            android:textSize="@dimen/space_13"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/space_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/record_circle_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/record_where_papa_circle_yellow"/>
+
+        <View
+            android:id="@+id/record_line_yellow"
+            android:layout_width="@dimen/space_1"
+            android:layout_height="@dimen/space_16"
+            android:layout_above="@id/record_circle_yellow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_2"
+            android:background="@color/shopping_items_title_color"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_3"
+            android:layout_toLeftOf="@id/record_circle_yellow"
+            android:background="@color/shopping_items_title_color"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_3"
+            android:layout_toRightOf="@id/record_circle_yellow"
+            android:background="@color/shopping_items_title_color"/>
+
+        <TextView
+            android:id="@+id/record_where_papa_car_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/record_circle_yellow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_8"
+            android:text="0%"
+            android:textColor="@color/record_where_color4"
+            android:textSize="@dimen/space_13"/>
+
+        <View
+            android:id="@+id/record_where_papa_car_line"
+            android:layout_width="@dimen/space_23"
+            android:layout_height="@dimen/space_1"
+            android:layout_below="@id/record_where_papa_car_other"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_4"
+            android:layout_marginTop="@dimen/space_4"
+            android:background="@color/shopping_items_title_color"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/record_where_papa_car_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/record_where_papa_car_line"
+            android:layout_centerHorizontal="true"
+            android:text="0%"
+            android:textColor="@color/record_peep_chart_self"
+            android:textSize="@dimen/space_13"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/record_where_papa_car_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/record_line_yellow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_3"
+            android:src="@drawable/record_where_papa_car"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/record_where_papa_car_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_11"
+            android:text="@string/record_self_where_papa_car"
+            android:textColor="@color/shopping_items_title_color"
+            android:textSize="@dimen/space_13"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/space_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/record_circle_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/record_circle_green"/>
+
+        <View
+            android:id="@+id/record_line_green"
+            android:layout_width="@dimen/space_1"
+            android:layout_height="@dimen/space_16"
+            android:layout_below="@id/record_circle_green"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_2"
+            android:background="@color/shopping_items_title_color"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_3"
+            android:layout_toLeftOf="@id/record_circle_green"
+            android:background="@color/shopping_items_title_color"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_3"
+            android:layout_toRightOf="@id/record_circle_green"
+            android:background="@color/shopping_items_title_color"/>
+
+        <TextView
+            android:id="@+id/record_where_papa_outdoors_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/record_circle_green"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_8"
+            android:text="0%"
+            android:textColor="@color/record_where_color5"
+            android:textSize="@dimen/space_13"/>
+
+        <View
+            android:id="@+id/record_where_papa_outdoors_line"
+            android:layout_width="@dimen/space_23"
+            android:layout_height="@dimen/space_1"
+            android:layout_above="@id/record_where_papa_outdoors_other"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_4"
+            android:layout_marginTop="@dimen/space_4"
+            android:background="@color/shopping_items_title_color"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/record_where_papa_outdoors_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/record_where_papa_outdoors_line"
+            android:layout_centerHorizontal="true"
+            android:text="0%"
+            android:textColor="@color/record_peep_chart_self"
+            android:textSize="@dimen/space_13"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/record_where_papa_outdoors_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/record_line_green"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_3"
+            android:src="@drawable/record_where_papa_outdoors"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/record_where_papa_outdoors_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_11"
+            android:text="@string/record_self_where_papa_outdoors"
+            android:textColor="@color/shopping_items_title_color"
+            android:textSize="@dimen/space_13"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_264"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/space_15"
+        android:src="@drawable/record_where_papa_point"/>
+</LinearLayout>

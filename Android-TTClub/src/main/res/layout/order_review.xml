@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shopping_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View style="@style/order_common_line"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/order_review_goods_img"
+                android:layout_width="@dimen/space_100"
+                android:layout_height="@dimen/space_100"
+                android:layout_marginBottom="@dimen/space_15"
+                android:layout_marginTop="@dimen/space_15" />
+
+            <RatingBar
+                android:id="@+id/order_review_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:progressDrawable="@drawable/order_review_rating_bar"
+                android:rating="5"
+                android:stepSize="1" />
+        </LinearLayout>
+
+        <View style="@style/order_common_line"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/order_review_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_180"
+                android:background="@null"
+                android:gravity="left|top"
+                android:hint="@string/order_review_hint"
+                android:padding="@dimen/space_10"
+                android:singleLine="true"
+                android:textColor="@color/black_dark"
+                android:textColorHint="@color/order_review_hint"
+                android:textSize="@dimen/space_15" />
+
+            <View style="@style/order_common_line"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/order_review_anony"
+                    android:textColor="@color/order_review_hint" />
+
+                <com.sjy.ttclub.widget.AlphaImageView
+                    android:id="@+id/order_review_anony"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/space_25"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/order_review_selector" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/order_common_line"></View>
+    </LinearLayout>
+</ScrollView>

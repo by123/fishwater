@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+    <com.sjy.ttclub.loadmore.LoadMoreListViewContainer
+        android:id="@+id/list_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <ListView
+            android:id="@+id/community_comment_reply_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarStyle="outsideOverlay" />
+    </com.sjy.ttclub.loadmore.LoadMoreListViewContainer>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/community_gray_line" />
+    <com.sjy.ttclub.emoji.EmotionKeyBoard
+        android:id="@+id/emoji_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>

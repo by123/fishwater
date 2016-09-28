@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_zfb"
+            style="@style/order_tv_options_style"
+            android:drawableLeft="@drawable/order_pay_zfb"
+            android:text="@string/order_pay_zfb_text" />
+
+        <ImageView
+            android:id="@+id/iv_zfb"
+            style="@style/order_iv_options_style"
+            android:src="@drawable/order_pay_checkbox" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_wx"
+            style="@style/order_tv_options_style"
+            android:drawableLeft="@drawable/order_pay_wx"
+            android:text="@string/order_pay_wx_text" />
+
+        <ImageView
+            android:id="@+id/iv_wx"
+            style="@style/order_iv_options_style"
+            android:src="@drawable/order_pay_checkbox" />
+    </RelativeLayout>
+</LinearLayout>

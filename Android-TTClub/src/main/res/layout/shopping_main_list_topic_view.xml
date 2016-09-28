@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/space_10">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_05"
+            android:background="@color/shopping_common_line"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_10">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/topic_ic"
+                android:layout_width="@dimen/space_18"
+                android:layout_height="@dimen/space_18"/>
+
+            <TextView
+                android:id="@+id/topic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_5"
+                android:textColor="@color/shopping_items_title_color"
+                android:textSize="@dimen/space_16"/>
+
+            <com.sjy.ttclub.shopping.widget.ShoppingCountdownView
+                android:id="@+id/surplus_countdown_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_5"
+                android:textColor="#ff5560"
+                android:textSize="@dimen/space_13"/>
+
+            <TextView
+                android:id="@+id/surplus_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_5"
+                android:text="@string/shopping_topic_surplus"
+                android:textColor="#9fa2a6"
+                android:textSize="@dimen/space_13"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_05"
+            android:background="@color/shopping_common_line"></View>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/topic_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

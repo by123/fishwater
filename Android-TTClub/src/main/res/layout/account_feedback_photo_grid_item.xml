@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="@dimen/space_75"
+        android:layout_height="@dimen/space_75"
+        android:layout_gravity="center">
+
+        <com.sjy.ttclub.widget.AlphaImageView
+            android:id="@+id/feedback_photo_grid_imageview"
+            android:layout_width="@dimen/space_70"
+            android:layout_height="@dimen/space_70"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/feedback_photo_grid_delete"
+        android:layout_width="@dimen/space_20"
+        android:layout_height="@dimen/space_20"
+        android:layout_gravity="right|top"
+        android:src="@drawable/account_feedback_photo_grid_delete_pic"
+        android:visibility="visible"/>
+
+</FrameLayout>

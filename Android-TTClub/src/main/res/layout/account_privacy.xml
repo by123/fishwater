@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/privacy_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_30"
+        android:gravity="center"
+        android:textColor="@color/tab_cursor_color"
+        android:textSize="@dimen/space_19"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50">
+
+        <com.sjy.ttclub.account.widget.SecurityPasswordEditText
+            android:id="@+id/security_password"
+            android:layout_width="@dimen/space_200"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/password_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_20"
+        android:gravity="center"
+        android:textColor="@color/tab_cursor_color"
+        android:textSize="@dimen/space_13"
+        android:visibility="gone"/>
+</LinearLayout>

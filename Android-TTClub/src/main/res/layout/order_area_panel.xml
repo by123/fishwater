@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View style="@style/order_common_line" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.sjy.ttclub.widget.WheelView
+            android:id="@+id/wv_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></com.sjy.ttclub.widget.WheelView>
+
+        <com.sjy.ttclub.widget.WheelView
+            android:id="@+id/wv_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></com.sjy.ttclub.widget.WheelView>
+
+        <com.sjy.ttclub.widget.WheelView
+            android:id="@+id/wv_district"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></com.sjy.ttclub.widget.WheelView>
+    </LinearLayout>
+
+    <com.sjy.ttclub.widget.AlphaTextView
+        android:id="@+id/area_btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@color/order_detail_delete_bg"
+        android:gravity="center"
+        android:text="@string/order_address_finish"
+        android:textColor="@color/white" />
+</LinearLayout>

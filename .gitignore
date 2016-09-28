@@ -1,0 +1,11 @@
+*.iml
+*.class
+*.properties
+*.gradle
+gradlew
+*/build
+
+
+gradlew.bat
+
+gradle/wrapper/gradle-wrapper.jar

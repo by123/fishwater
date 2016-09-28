@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/space_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_05"
+            android:background="@color/shopping_common_line"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/order_goods_detail"
+                android:textColor="@color/shopping_items_other_color"
+                android:textSize="@dimen/space_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_05"
+            android:background="@color/shopping_common_line"></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_15"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/order_goods_sum_title"
+                android:textColor="@color/shopping_items_other_color"
+                android:textSize="@dimen/space_14" />
+
+            <TextView
+                android:id="@+id/order_main_goods_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/order_price_text"
+                android:textSize="@dimen/space_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_05"
+            android:background="@color/shopping_common_line"></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_15"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/order_goods_freight"
+                android:textColor="@color/shopping_items_other_color"
+                android:textSize="@dimen/space_14" />
+
+            <TextView
+                android:id="@+id/order_main_goods_freight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/order_price_text"
+                android:textSize="@dimen/space_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_05"
+            android:background="@color/shopping_common_line"></View>
+    </LinearLayout>
+</LinearLayout>

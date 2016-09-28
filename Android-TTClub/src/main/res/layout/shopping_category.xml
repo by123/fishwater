@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shopping_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/shopping_common_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:layout_marginTop="@dimen/space_1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shopping_category_top_multiple"
+            style="@style/shopping_category_top_text"
+            android:layout_weight="1"
+            android:text="@string/shopping_category_top_multiple" />
+
+        <TextView
+            android:id="@+id/shopping_category_top_new"
+            style="@style/shopping_category_top_text"
+            android:layout_weight="1"
+            android:text="@string/shopping_category_top_new" />
+
+        <TextView
+            android:id="@+id/shopping_category_top_sale"
+            style="@style/shopping_category_top_text"
+            android:layout_weight="1"
+            android:text="@string/shopping_category_top_sale" />
+
+        <FrameLayout
+            android:id="@+id/shopping_category_top_filter"
+            style="@style/shopping_category_top_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/space_5"
+                android:drawableRight="@drawable/shopping_category_top_filter"
+                android:text="@string/shopping_category_top_filter"></TextView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginTop="@dimen/space_51"
+        android:background="@color/shopping_common_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_52"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/grid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="@dimen/space_15"
+            android:paddingRight="@dimen/space_15"
+            android:paddingTop="@dimen/space_10"
+            android:visibility="gone">
+
+            <GridView
+                android:id="@+id/grid_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@null"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"></GridView>
+
+            <com.sjy.ttclub.widget.AlphaTextView
+                android:id="@+id/grid_clear"
+                android:layout_width="@dimen/space_50"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopping_panic_buy"
+                android:gravity="center"
+                android:text="@string/shopping_category_clear"
+                android:textColor="@color/shopping_panic_light_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/shopping_category_list_ptr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_52">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/shopping_category_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <FrameLayout
+        android:id="@+id/shopping_category_float_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/shopping_category_panel_bg_color"
+        android:visibility="gone"></FrameLayout>
+
+    <include layout="@layout/shopping_category_panel"></include>
+
+    <com.sjy.ttclub.widget.LoadingLayout
+        android:id="@+id/shopping_category_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_my_foot"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/account_follow_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/space_10">
+
+        <TextView
+            android:id="@+id/account_follow_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_5"
+            android:text="@string/account_attention"
+            android:textColor="@color/account_text_color"
+            android:textSize="@dimen/space_14"/>
+
+        <TextView
+            android:id="@+id/account_follow_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_9"
+            android:layout_toRightOf="@+id/account_follow_tv"
+            android:textColor="@color/account_text_color"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/divider_width"
+        android:layout_height="@dimen/space_18"
+        android:background="@color/white"
+        android:layout_gravity="center_vertical"/>
+
+    <RelativeLayout
+        android:id="@+id/account_fans_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/space_10">
+
+        <TextView
+            android:id="@+id/account_fans_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_5"
+            android:text="@string/account_fans"
+            android:textColor="@color/account_text_color"
+            android:textSize="@dimen/space_14"/>
+
+        <TextView
+            android:id="@+id/account_fans_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_9"
+            android:layout_toRightOf="@+id/account_fans_tv"
+            android:textColor="@color/account_text_color"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/divider_width"
+        android:layout_height="@dimen/space_18"
+        android:background="@color/white"
+        android:layout_gravity="center_vertical"/>
+
+    <RelativeLayout
+        android:id="@+id/account_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/space_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_5"
+            android:text="@string/account_collect"
+            android:textColor="@color/account_text_color"
+            android:textSize="@dimen/space_14"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/share_all"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/ll_share_top"
+        android:layout_width="@dimen/space_257"
+        android:layout_height="@dimen/space_270"
+        android:background="@drawable/account_share_top"
+        android:orientation="vertical">
+
+        <com.sjy.ttclub.widget.RoundProgressBar
+            android:id="@+id/share_tasks_view"
+            android:layout_width="@dimen/space_125"
+            android:layout_height="@dimen/space_125"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_45"
+            android_custom:rIcon="@drawable/account_ic_chengjiu"
+            android_custom:rdtext="@string/account_sex_symbol"
+            android_custom:rdtextColor="@color/title_bg_color"
+            android_custom:rdtextSize="@dimen/space_12"
+            android_custom:roundColor="@color/account_round_color"
+            android_custom:roundProgressColor="@color/title_bg_color"
+            android_custom:roundWidth="@dimen/space_10"
+            android_custom:rtextColor="@color/title_bg_color"
+            android_custom:rtextSize="@dimen/space_30"/>
+
+        <LinearLayout
+            android:id="@+id/ll_text_data_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_30">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_papa_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/sex_panel_papa"
+                    android:textColor="@color/title_bg_color"
+                    android:textSize="@dimen/space_14"/>
+
+                <TextView
+                    android:id="@+id/tv_papa_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="0"
+                    android:textColor="@color/title_bg_color"
+                    android:textSize="@dimen/space_14"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/divider_width"
+                android:layout_height="@dimen/space_30"
+                android:layout_gravity="center"
+                android:background="@color/account_round_color"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_record_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/sex_panel_record"
+                    android:textColor="@color/title_bg_color"
+                    android:textSize="@dimen/space_14"/>
+
+                <TextView
+                    android:id="@+id/tv_record_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="0"
+                    android:textColor="@color/title_bg_color"
+                    android:textSize="@dimen/space_14"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/divider_width"
+                android:layout_height="@dimen/space_30"
+                android:layout_gravity="center"
+                android:background="@color/account_round_color"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_community_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/sex_panel_community"
+                    android:textColor="@color/title_bg_color"
+                    android:textSize="@dimen/space_14"/>
+
+                <TextView
+                    android:id="@+id/tv_community_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="0"
+                    android:textColor="@color/title_bg_color"
+                    android:textSize="@dimen/space_14"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/divider_width"
+                android:layout_height="@dimen/space_30"
+                android:layout_gravity="center"
+                android:background="@color/account_round_color"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_sort_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/sex_panel_sort"
+                    android:textColor="@color/title_bg_color"
+                    android:textSize="@dimen/space_14"/>
+
+                <TextView
+                    android:id="@+id/tv_sort_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="0"
+                    android:textColor="@color/title_bg_color"
+                    android:textSize="@dimen/space_14"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_share_middle"
+        android:layout_width="@dimen/space_257"
+        android:layout_height="@dimen/space_116"
+        android:layout_below="@+id/ll_share_top"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/middle_first_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/middle_second_title"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/space_12"/>
+
+        <TextView
+            android:id="@+id/middle_second_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_10"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/space_14"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_share_bottom"
+        android:layout_width="@dimen/space_257"
+        android:layout_height="@dimen/space_50"
+        android:layout_below="@+id/ll_share_middle"
+        android:background="@drawable/account_share_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/account_sex_share"/>
+
+        <com.sjy.ttclub.widget.AlphaImageView
+            android:id="@+id/iv_share_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/share_wechat_friends"/>
+
+        <com.sjy.ttclub.widget.AlphaImageView
+            android:id="@+id/iv_share_qqzone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/share_qzone"/>
+
+        <com.sjy.ttclub.widget.AlphaImageView
+            android:id="@+id/iv_share_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/share_qq"/>
+
+        <com.sjy.ttclub.widget.AlphaImageView
+            android:id="@+id/iv_share_wb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/share_weibo"/>
+
+        <com.sjy.ttclub.widget.AlphaImageView
+            android:id="@+id/iv_share_wh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/share_wechat_timeline"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_share_icon_bottom"
+        android:layout_width="@dimen/space_257"
+        android:layout_height="@dimen/space_50"
+        android:layout_below="@+id/ll_share_middle"
+        android:background="@drawable/account_share_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_10"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_share_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share_logo_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_share_bottom"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/space_12"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_personalinfo"
+        android:layout_width="@dimen/space_257"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_235"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sv_share_user_head"
+            android:layout_width="@dimen/space_56"
+            android:layout_height="@dimen/space_60"
+            android:layout_marginTop="@dimen/space_10"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:roundAsCircle="true"
+            fresco:roundedCornerRadius="@dimen/space_180"/>
+
+        <TextView
+            android:id="@+id/tv_share_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_7"
+            android:text="@string/account_share_bottom_info"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="@dimen/space_12"/>
+    </LinearLayout>
+</RelativeLayout>

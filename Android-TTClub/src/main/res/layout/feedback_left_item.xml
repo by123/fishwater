@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <View style="@style/account_line_style"/>
+
+    <TextView
+        android:id="@+id/feedback_question_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/space_15"
+        android:paddingRight="@dimen/space_15"
+        android:paddingTop="@dimen/space_10"
+        android:textColor="@color/account_gray"
+        android:textSize="@dimen/space_15"/>
+
+    <TextView
+        android:id="@+id/feedback_question_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_15"
+        android:paddingRight="@dimen/space_15"
+        android:paddingTop="@dimen/space_5"
+        android:textColor="@color/account_setting_gray"
+        android:textSize="@dimen/space_12"/>
+
+    <View style="@style/account_line_style"/>
+
+</LinearLayout>

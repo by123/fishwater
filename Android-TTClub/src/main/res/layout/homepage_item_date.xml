@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_8"
+        android:background="#f4f4f4" />
+
+    <TextView
+        android:id="@+id/homepage_date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_14"
+        android:layout_marginRight="@dimen/space_14"
+        android:layout_marginTop="@dimen/space_10"
+        android:text="2015.12.03 昨天"
+        android:textColor="@color/black"
+        android:textSize="@dimen/space_16"
+        android:textStyle="bold" />
+
+</LinearLayout>

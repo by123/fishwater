@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_8"
+        android:background="#f4f4f4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_195"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_8"
+        android:background="@drawable/homepage_item_coner_bg"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/left_pic_image"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_195"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:roundAsCircle="false"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="false"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="false"
+            fresco:roundedCornerRadius="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/left_pic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_15"
+                android:maxLines="1"
+                android:text="撒打算的"
+                android:textColor="#202020"
+                android:textSize="@dimen/space_16" />
+
+
+            <LinearLayout
+                android:id="@+id/left_pic_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_17"
+                android:gravity="center_vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/left_pic_user_image"
+                    android:layout_width="@dimen/space_10"
+                    android:layout_height="@dimen/space_10"
+                    android:scaleType="centerCrop"
+                    fresco:roundAsCircle="false" />
+
+                <TextView
+                    android:id="@+id/left_pic_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_4"
+                    android:text="所得税"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/space_11" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/space_32"
+                android:layout_height="@dimen/space_3"
+                android:layout_marginTop="@dimen/space_12"
+                android:background="#222222" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:layout_marginRight="@dimen/space_47"
+                android:layout_marginTop="@dimen/space_16">
+
+                <TextView
+                    android:id="@+id/left_pic_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:lineSpacingExtra="@dimen/space_5"
+                    android:maxLines="3"
+                    android:text=" 阿斯大苏打撒旦撒"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/space_12" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/left_pic_like"
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/homepage_item_praise_selector"
+                    android:drawablePadding="@dimen/space_5"
+                    android:paddingBottom="@dimen/space_10"
+                    android:paddingRight="@dimen/space_10"
+                    android:paddingTop="@dimen/space_10"
+                    android:text="22"
+                    android:textColor="#BFBFBF"
+                    android:textSize="@dimen/space_11" />
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/left_pic_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:drawableLeft="@drawable/homepage_icon_comment"
+                        android:drawablePadding="@dimen/space_5"
+                        android:padding="@dimen/space_10"
+                        android:text="234"
+                        android:textColor="#BFBFBF"
+                        android:textSize="@dimen/space_11" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

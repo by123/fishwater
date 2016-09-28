@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/shopping_category_top_view_grid_bg" />
+            <corners android:radius="@dimen/space_5" />
+        </shape>
+    </item>
+
+</layer-list>

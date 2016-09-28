@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_shopping_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/shopping_car_ck"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_10"
+            android:button="@drawable/checkbox_green" />
+
+        <include layout="@layout/shopping_car_goods_main"></include>
+
+        <include layout="@layout/shopping_car_goods_count_operation"></include>
+    </LinearLayout>
+</LinearLayout>

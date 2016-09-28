@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/chat_time_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center"
+            android:textColor="@color/llgray"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chat_time_left"
+            android:layout_marginRight="@dimen/space_10">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/user_head_left"
+                android:layout_width="@dimen/space_50"
+                android:layout_height="@dimen/space_50"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/space_10"
+                android:padding="@dimen/space_5"
+                fresco:roundAsCircle="true"/>
+
+            <RelativeLayout
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/user_head_left"
+                android:layout_marginRight="@dimen/space_60"
+                android:background="@drawable/account_message_chat_left_bg"
+                android:layout_toRightOf="@+id/user_head_left">
+
+                <TextView
+                    android:id="@+id/chat_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingRight="@dimen/space_10"
+                    android:paddingTop="@dimen/space_8"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_15"/>
+
+                <com.sjy.ttclub.widget.AlphaTextView
+                    android:id="@+id/check_content_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/chat_content"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingRight="@dimen/space_10"
+                    android:paddingTop="@dimen/space_5"
+                    android:textColor="#fc1255"
+                    android:textSize="@dimen/space_14"/>
+
+                <View
+                    android:layout_width="@dimen/space_10"
+                    android:layout_height="@dimen/space_10"
+                    android:layout_below="@+id/check_content_link"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

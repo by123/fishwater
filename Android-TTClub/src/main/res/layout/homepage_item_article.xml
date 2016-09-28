@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_20"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/homepage_article_image"
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:layout_marginLeft="@dimen/space_14"
+        android:layout_marginRight="@dimen/space_14"
+        android:scaleType="centerCrop"
+        fresco:roundAsCircle="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/homepage_article_title_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/homepage_article_type_bg_pink"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="文章"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_10"/>
+
+        <TextView
+            android:id="@+id/homepage_article_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="25dp"
+            android:gravity="left"
+            android:maxLines="2"
+            android:text="测试你大爷测试你"
+            android:textColor="#222222"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_homepage_article_brief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homepage_article_title"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="4dp"
+        android:gravity="left"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="3"
+        android:text="测试"
+        android:textColor="#7b7b7b"
+        android:textSize="13dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_20"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="@dimen/space_14"
+        android:layout_marginRight="@dimen/space_14"
+        android:background="@color/homepage_list_divider_color"/>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_bg"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                style="@style/account_line_style"
+                android:layout_marginTop="@dimen/space_10"/>
+
+            <EditText
+                android:id="@+id/account_want_feedback_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_120"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="@string/account_feedback_content"
+                android:maxLength="150"
+                android:maxLines="5"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_15"
+                android:paddingRight="@dimen/space_15"
+                android:paddingTop="@dimen/space_10"
+                android:textColor="@color/account_gray"
+                android:textSize="@dimen/space_13"/>
+
+            <View style="@style/account_line_style"/>
+
+            <com.sjy.ttclub.account.widget.NoScrollGridView
+                android:id="@+id/account_want_feedback_grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_15"
+                android:background="@color/white"
+                android:horizontalSpacing="@dimen/space_3"
+                android:numColumns="4"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_15"
+                android:paddingRight="@dimen/space_15"
+                android:paddingTop="@dimen/space_10"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/feedback_common_problems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/space_21"
+        android:text="@string/account_feedback_common_problems"
+        android:textColor="@color/pink"
+        android:textSize="@dimen/space_18"/>
+
+</LinearLayout>
