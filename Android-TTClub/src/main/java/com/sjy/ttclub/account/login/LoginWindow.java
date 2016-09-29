@@ -9,8 +9,8 @@ import android.widget.EditText;
 
 import com.lsym.ttclub.R;
 import com.sjy.ttclub.account.Constant;
-import com.sjy.ttclub.account.model.LoginMedia;
 import com.sjy.ttclub.account.model.AccountManager;
+import com.sjy.ttclub.account.model.LoginMedia;
 import com.sjy.ttclub.framework.DefaultWindow;
 import com.sjy.ttclub.framework.DeviceManager;
 import com.sjy.ttclub.framework.IDefaultWindowCallBacks;
@@ -174,6 +174,8 @@ public class LoginWindow extends DefaultWindow implements View.OnClickListener {
         AccountManager accountManager = AccountManager.getInstance();
         accountManager.login(phone, password);
     }
+
+
 
     @Override
     protected void onWindowStateChange(int stateFlag) {

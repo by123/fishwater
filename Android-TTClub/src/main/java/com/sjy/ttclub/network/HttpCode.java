@@ -10,7 +10,7 @@ public class HttpCode {
      */
     public static final int ERROR_NETWORK = -1000;
     public static final int ERROR_CANCEL = -1001;
-    public static final int SUCCESS_CODE = 0;//请求成功
+    public static final int SUCCESS_CODE = 1;//请求成功
     public static final int FAIL_CODE = 100;//操作失败
     public static final int ILLEGAL_CODE = 101;//非法请求
     public static final int INVALID_PLATFORM_CODE = 102;//无效平台

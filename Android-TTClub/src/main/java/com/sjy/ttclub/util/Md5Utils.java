@@ -20,7 +20,7 @@ public class Md5Utils {
             '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
     private static char[] encodeHex(byte[] data) {
-        return encodeHex(data, false);
+        return encodeHex(data, true);
     }
 
     private static char[] encodeHex(byte[] data, boolean toLowerCase) {

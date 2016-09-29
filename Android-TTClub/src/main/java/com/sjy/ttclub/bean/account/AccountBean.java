@@ -27,7 +27,7 @@ public class AccountBean implements Serializable {
         public String sex;
         public String sexIfUpdate;
         public String sexyLife;
-        public String token;
+        public String sessionid;
         public String userId;
         public String userRoleId;
 

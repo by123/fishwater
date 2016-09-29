@@ -45,7 +45,7 @@ public class AccountInfo {
         mSex = data.sex;
         mSexIfUpdate = data.sexIfUpdate;
         mSexyLife = data.sexyLife;
-        mToken = data.token;
+        mToken = data.sessionid;
         mUserId = data.userId;
         mUserRoleId = data.userRoleId;
         mIfBindPhone = data.ifBindPhone;

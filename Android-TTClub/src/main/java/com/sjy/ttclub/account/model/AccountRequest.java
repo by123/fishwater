@@ -11,6 +11,7 @@ import com.sjy.ttclub.network.HttpCode;
 import com.sjy.ttclub.network.HttpManager;
 import com.sjy.ttclub.network.HttpMethod;
 import com.sjy.ttclub.network.HttpUrls;
+import com.sjy.ttclub.network.IHttpCallBack;
 import com.sjy.ttclub.network.IHttpManager;
 import com.sjy.ttclub.stats.StatsKeyDef;
 import com.sjy.ttclub.stats.StatsModel;
@@ -92,9 +93,9 @@ import com.sjy.ttclub.widget.dialog.LoadingDialog;
             sexyLife = CommonConst.DEFAULT_SEX_SKILL;
         }
         IHttpManager httpManager = HttpManager.getBusinessHttpManger();
-        httpManager.addParams("a", "userLoginQuick");
-        httpManager.addParams("phoneNumber", phoneNo);
-        httpManager.addParams("password", Md5Utils.getMD5(password));
+        httpManager.addParams("a", "login");
+        httpManager.addParams("tel", phoneNo);
+        httpManager.addParams("pass", Md5Utils.getMD5(password));
         httpManager.addParams("sex", String.valueOf(sex));
         httpManager.addParams("marriage", String.valueOf(marriage));
         httpManager.addParams("sexyLife", String.valueOf(sexyLife));
@@ -108,6 +109,35 @@ import com.sjy.ttclub.widget.dialog.LoadingDialog;
             StatsModel.stats(StatsKeyDef.PAGE_LOGIN_CELLPHONE);
             super.onSuccess(obj, result);
         }
+    }
+
+
+    /**
+     * 自动登录
+     */
+    public void startAutoLogin()
+    {
+        AccountManager accountManager = AccountManager.getInstance();
+        String sessionid =accountManager.getToken();
+        if (StringUtils.isEmpty(sessionid))
+        {
+            //跳转到登录界面
+            return;
+        }
+        IHttpManager httpManager = HttpManager.getBusinessHttpManger();
+        httpManager.addParams("a", "autoLogin");
+        httpManager.addParams("sessionid", sessionid);
+        httpManager.request(HttpUrls.USER_URL, HttpMethod.POST, AccountBean.class, new IHttpCallBack() {
+            @Override
+            public <T> void onSuccess(T obj, String result) {
+
+            }
+
+            @Override
+            public void onError(String errorStr, int code) {
+
+            }
+        });
     }
 
     /**
@@ -177,9 +207,9 @@ import com.sjy.ttclub.widget.dialog.LoadingDialog;
                 }
                 AccountBean personalBean = (AccountBean) obj;
                 AccountBean.Data data = personalBean.getData();
-                if (StringUtils.isEmpty(data.token)) {
+                if (StringUtils.isEmpty(data.sessionid)) {
                     try {
-                        data.token = AccountManager.getInstance().getToken();
+                        data.sessionid = AccountManager.getInstance().getToken();
                     } catch (Exception e) {
                         e.printStackTrace();
                     }

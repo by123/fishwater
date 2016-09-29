@@ -294,6 +294,15 @@ public class AccountManager implements AccountRequest.AccountRequestCallback {
         mAccountRequest.startLoginRequest(phone, password, getSex(), getMarriage(), getSexyLife());
     }
 
+
+    /**
+     * 自动登录
+     */
+    public void autoLogin()
+    {
+        mAccountRequest.startAutoLogin();
+    }
+
     /**
      * 打开登录面板
      */

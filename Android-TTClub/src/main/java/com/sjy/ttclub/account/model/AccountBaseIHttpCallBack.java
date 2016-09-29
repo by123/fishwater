@@ -1,5 +1,8 @@
 package com.sjy.ttclub.account.model;
 
+import android.provider.Settings;
+import android.util.Log;
+
 import com.sjy.ttclub.framework.MsgDispatcher;
 import com.sjy.ttclub.framework.adapter.MsgDef;
 import com.sjy.ttclub.network.HttpCode;
@@ -21,4 +24,5 @@ public abstract class AccountBaseIHttpCallBack implements IHttpCallBack {
     }
 
     public abstract void onFail(String errorStr, int code);
+
 }
