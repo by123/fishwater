@@ -5,7 +5,15 @@ package com.sjy.ttclub.bean;
  * Email: linhaizhong@ta2she.com
  */
 public class Banner {
-    public String bannerId;
+
+//    id	Int	是	推荐位的唯一ID
+//    title	String	是	标题
+//    url	String	是	图片的URL地址
+//    typeID	Int	是	目标类型1-文章、2-商品、3-帖子
+//    targetID	Int	是	跳转的目标唯一ID
+
+
+    public String targetID;
     /**
      * 广告标题
      */
@@ -13,18 +21,18 @@ public class Banner {
     /**
      * 广告图片url
      */
-    private String imageUrl;
+    private String url;
     /**
      * 广告属性
      */
-    private int adAttr;
+    private int typeID;
     /**
      * 广告属性值
      */
     private String adAttrValue;
 
     public String getBannerId(){
-        return bannerId;
+        return targetID;
     }
 
     public String getTitle() {
@@ -36,19 +44,19 @@ public class Banner {
     }
 
     public String getImageUrl() {
-        return imageUrl;
+        return url;
     }
 
     public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+        this.url = imageUrl;
     }
 
     public int getAdAttr() {
-        return adAttr;
+        return typeID;
     }
 
     public void setAdAttr(int adAttr) {
-        this.adAttr = adAttr;
+        this.typeID = adAttr;
     }
 
     public String getAdAttrValue() {

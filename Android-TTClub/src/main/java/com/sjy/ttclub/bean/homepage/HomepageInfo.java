@@ -18,7 +18,9 @@ public class HomepageInfo {
      */
     private String msg;
 
-    private Data data;
+//    private Data data;
+
+    private List<Banner> data;
 
     public class Data {
         private sexIndex sexIndex;
@@ -125,8 +127,12 @@ public class HomepageInfo {
         return msg;
     }
 
-    public Data getData() {
+    public List<Banner> getData() {
         return data;
     }
+
+    //    public Data getData() {
+//        return data;
+//    }
 
 }

@@ -165,7 +165,8 @@ public class HomepageMainView extends FrameLayout {
 
     private void tryGetHomepageData() {
         IHttpManager httpManager = HttpManager.getBusinessHttpManger();
-        httpManager.addParams("a", "homePage");
+        httpManager.addParams("a", "slideshowList");
+        httpManager.addParams("position","1");
         httpManager.request(HttpUrls.HOMEPAGE_URL, HttpMethod.POST, new IHttpCallBack() {
             @Override
             public <T> void onSuccess(T obj, String result) {
@@ -211,9 +212,9 @@ public class HomepageMainView extends FrameLayout {
             return;
         }
         //banner 数据更新
-        List<Banner> bannerList = homepageInfo.getData().getBanners();
+        List<Banner> bannerList = homepageInfo.getData();
         updateTopBanners(bannerList);
-        mTopLayout.setQACircleId(homepageInfo.getData().getCircleId());
+//        mTopLayout.setQACircleId(homepageInfo.getData().getCircleId());
         if (!isFromCache) {
             HomepageCacheManager.cacheHomepageFirstData(getContext(), result);
         } else {
